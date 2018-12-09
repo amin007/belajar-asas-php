@@ -17,10 +17,8 @@ $posmen['alamat'] = $_POST[$jadual]['alamat'];
 $posmen['bandar'] = $_POST[$jadual]['bandar'];
 $posmen['kdprody'] = $_POST[$jadual]['kdprody'];
 
-# panggil sql update
-$sql = $tanya->tambahSqlBanyakNilai($jadual, $medan, $posmen);
-
-echo '$sql:<pre>'; print_r($sql); echo '</pre>';
+# panggil sql insert
+$tanya->tambahSqlBanyakNilai($jadual, $medan, $posmen);
 
 //$result = $dbPdo->selectAll($sql);
 //echo '$result:<pre>'; print_r($result) ;echo '</pre>';
