@@ -24,28 +24,28 @@
 </div>
 
 <div class="form-label-group">
-	<label for="inputEmail">nim</label>
-	<input type="email" name="biodata[nim]" id="inputEmail" class="form-control" placeholder="nim">
+	<label for="inputNim">nim</label>
+	<input type="text" name="biodata[nim]" class="form-control" placeholder="nim">
 </div>
 
 <div class="form-label-group">
-	<label for="inputEmail">nama</label>
-	<input type="email" name="biodata[nama]" id="inputEmail" class="form-control" placeholder="nama">
+	<label for="inputnAMA">nama</label>
+	<input type="text" name="biodata[nama]" class="form-control" placeholder="nama">
 </div>
 
 <div class="form-label-group">
 	<label for="inputEmail">alamat</label>
-	<input type="email" name="biodata[alamat]" id="inputEmail" class="form-control" placeholder="alamat">
+	<input type="text" name="biodata[alamat]" class="form-control" placeholder="alamat">
 </div>
 
 <div class="form-label-group">
 	<label for="inputEmail">bandar</label>
-	<input type="email" name="biodata[bandar]" id="inputEmail" class="form-control" placeholder="bandar">
+	<input type="text" name="biodata[bandar]" class="form-control" placeholder="bandar">
 </div>
 
 <div class="form-label-group">
 	<label for="inputEmail">kdprody</label>
-	<input type="email" name="biodata[kdprody]" id="inputEmail" class="form-control" placeholder="kdprody">
+	<input type="text" name="biodata[kdprody]" class="form-control" placeholder="kdprody">
 </div>
 
 <div class="checkboxmb-3">
