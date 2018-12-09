@@ -1,5 +1,5 @@
 <?php
-namespace Aplikasi\Kitab; //echo __NAMESPACE__; 
+namespace Aplikasi\Kitab; //echo __NAMESPACE__;
 class DB_Pdo extends \PDO
 {
 #==================================================================================================================
