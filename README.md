@@ -1,6 +1,17 @@
 # belajar-asas-php
 belajar asas php di hospital kluang
 
+___
+# Php Version
+
+```php
+//phpinfo();
+//echo PHPVERSION() . '<br>';
+echo PHP_VERSION . '<br>';
+echo PHP_MAJOR_VERSION . '.' . PHP_MINOR_VERSION . '.' . PHP_RELEASE_VERSION . '<br>';
+echo '<pre>'; print_r($_SERVER); echo '</pre>';
+```
+
 # Standard
 * http://www.php-fig.org/psr/psr-4/
 
