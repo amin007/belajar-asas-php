@@ -52,7 +52,8 @@ $senarai = array('cipmore10'=>'biskut cipmore 10 keping - yani.jpg',
 <div class="reveal">
 <div class="slides" style="border: 2px solid #000000;">
 <!-- ========================================================================================== -->
-<section class="container">
+<section>
+	<div class="container">
 	<h1>Koleksi Makanan</h1>
 	<h3>koleksi makanan yang sedap dimakan</h3>
 	<div class="row">
@@ -72,15 +73,17 @@ $senarai = array('cipmore10'=>'biskut cipmore 10 keping - yani.jpg',
 			</div>
 		</div>
 	</div>
-	</div><!-- / class="col-md-4" -->
+	</div><!-- / class="col-md" -->
 	<?php endforeach; ?>
 	</div><!-- / class="row" -->
+	</div><!-- / class="container" -->
 </section>
 <!-- ========================================================================================== -->
 <?php
 foreach($senarai as $id => $produk):?>
-<section class="container">
-	<h4><i class="fas fa-cookie fa-spin"></i><?php echo $produk ?></h4>
+<section>
+	<div class="container">
+	<h1><i class="fas fa-cookie fa-spin"></i><?php echo $produk ?></h1>
 	<table class="table">
 	<tr><td rowspan="2">
 		<image src="images/slides/<?php echo $produk ?>"
@@ -90,6 +93,7 @@ foreach($senarai as $id => $produk):?>
 	</tr>
 	<tr><td align="top">Diskaun</td></tr>
 	</table>
+	</div><!-- / class="container" -->
 </section>
 <!-- ========================================================================================== -->
 <?php
