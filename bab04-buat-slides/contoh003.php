@@ -9,6 +9,7 @@
 
 <link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet" type="text/css">
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/reveal.css">
 
 <style type="text/css">
 table.excel {
@@ -49,20 +50,36 @@ $senarai = array('cipmore10'=>'biskut cipmore 10 keping - yani.jpg',
 );
 ?>
 <div class="reveal">
-<div class="slides">
+<div class="slides" style="border: 2px solid #000000;">
 <!-- ========================================================================================== -->
-<section class="container" style="border: 2px solid #000000;">
+<section class="container">
 	<h1>Koleksi Makanan</h1>
 	<h3>koleksi makanan yang sedap dimakan</h3>
+	<div class="row">
 	<?php foreach($senarai as $id => $produk):?>
+	<div class="col-md">
+	<div class="card mb-4 shadow-sm">
 		<image src="images/slides/<?php echo $produk ?>"
-		height="300" width="300" class="img-thumbnail">
-	<?php endforeach; ?>	
+		height="100" width="100" class="img-thumbnail">
+		<div class="card-body">
+			<p class="card-text"><?php echo $produk ?></p>
+			<div class="d-flex justify-content-between align-items-center">
+				<div class="btn-group">
+					<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+					<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+				</div>
+				<small class="text-muted">9 mins</small>
+			</div>
+		</div>
+	</div>
+	</div><!-- / class="col-md-4" -->
+	<?php endforeach; ?>
+	</div><!-- / class="row" -->
 </section>
 <!-- ========================================================================================== -->
 <?php
 foreach($senarai as $id => $produk):?>
-<section class="container" style="border: 2px solid #000000;">
+<section class="container">
 	<h4><i class="fas fa-cookie fa-spin"></i><?php echo $produk ?></h4>
 	<table class="table">
 	<tr><td rowspan="2">
@@ -83,7 +100,7 @@ endforeach; echo "\n";
 
 <!-- khas untuk jquery dan js2 lain
 =============================================================================================== -->
-<script src="js/reveal.js"></script>
+<script type="text/javascript" src="js/reveal.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
