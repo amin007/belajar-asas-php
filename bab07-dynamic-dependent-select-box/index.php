@@ -1,12 +1,14 @@
-<?php 
-    // Include the database config file 
-    include_once 'dbConfig.php'; 
+<?php
+# https://www.codexworld.com/dynamic-dependent-select-box-using-jquery-ajax-php/
+// Include the database config file
+define('URL', dirname('http://' . $_SERVER['SERVER_NAME'] . $_SERVER['PHP_SELF']));
+include_once 'dbConfig.php';
      
-    // Fetch all the country data 
-    $query = "SELECT * FROM tb_countries WHERE status = 1 ORDER BY country_name ASC"; 
-    $result = $db->query($query); 
+// Fetch all the country data
+$query = "SELECT * FROM tb_countries WHERE status = 1 ORDER BY country_name ASC";
+$result = $db->query($query);
 ?>
-
+<form action="<?php echo URL ?>" method="post">
 <!-- Country dropdown -->
 <select id="country">
     <option value="">Select Country</option>
@@ -31,6 +33,8 @@
     <option value="">Select state first</option>
 </select>
 
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
 <?php 
 if(isset($_POST['submit'])){ 
     echo 'Selected Country ID: '.$_POST['country']; 
