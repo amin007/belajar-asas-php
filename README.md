@@ -21,6 +21,8 @@ echo '<pre>'; print_r($_SERVER); echo '</pre>';
 * https://github.com/amin007/mvc-melayu
 ___
 # Sumber ilham kawan-kawan
+* Php
+  * [Learn-Php-For-Wordpress](https://code.tutsplus.com/courses/learn-php-for-wordpress/lessons/php-in-the-loop)
 * Stylesheet
   * [Bootstrap](http://getbootstrap.com)
   * [Bootstrap.Themes](http://bootstrap.themes.guide)
