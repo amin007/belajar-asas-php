@@ -94,9 +94,45 @@
 		echo "\n\n</td><td valign=\"top\">\n";
 		foreach(getIdea() as $name => $web): echo pautan($name,$web); endforeach;
 		echo "\n\n</td><td valign=\"top\">\n";
-		foreach(dnschanger() as $name => $web): echo pautan($web,null); endforeach;
+		foreach(dnschanger() as $name => $web): echo paparan($web,null); endforeach;
 		echo "\n</td></tr></table>";
 		dibawah();
+	}
+#--------------------------------------------------------------------------------------------------
+	function kiraPaparan()
+	{
+		$kira[01] = 0;
+		$kira[02] = 16;
+		$kira[03] = 16;
+		foreach(dnschanger() as $name => $web):
+			$data = explode('|', $web);
+			//$data0 = strlen($data[0]);
+			if(strlen($data[1]) > $kira[01]) $kira[01] = strlen($data[1]);
+			//if(strlen($data[2]) > $kira[02]) $kira[02] = strlen($data[2]);
+			//if(strlen($data[3]) > $kira[03]) $kira[03] = strlen($data[3]);
+		endforeach;
+
+		return $kira;
+	}
+#--------------------------------------------------------------------------------------------------
+	function paparan($web, $test)
+	{
+		# set pembolehubah utama
+		$kira = kiraPaparan();
+		$data = explode('|', $web);
+		$semak01 = ($kira[01] - strlen($data[1]) + 1);
+		$semak02 = ($kira[02] - strlen($data[2]) + 1);
+		$semak03 = ($kira[03] - strlen($data[3]) + 1);
+		# papar
+			$p = "\n<code>| " . $data[1];
+			for($i = 1; $i < $semak01; $i++): $p .= "-"; endfor;
+			$p .=  "|" . $data[2];
+			for($i = 1; $i < $semak02; $i++): $p .= "-"; endfor;
+			$p .= "|" . $data[3];
+			for($i = 1; $i < $semak03; $i++): $p .= "-"; endfor;
+			$p .= "|</code><hr>";
+		#
+		return $p;
 	}
 #--------------------------------------------------------------------------------------------------
 	function test_files()
