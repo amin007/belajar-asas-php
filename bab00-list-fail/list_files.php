@@ -90,7 +90,6 @@
 			else:echo '';endif;
 		endforeach;
 		echo "\n\n</td><td valign=\"top\">\n";
-		foreach(getWebsite() as $name => $web): echo pautan($name,$web); endforeach;
 		echo "\n\n</td><td valign=\"top\">\n";
 		foreach(getIdea() as $name => $web): echo pautan($name,$web); endforeach;
 		echo "\n\n</td><td valign=\"top\">\n";
@@ -171,28 +170,6 @@
 		endforeach; echo $g . '</pre>';
 
 		//dibawah();
-	}
-#--------------------------------------------------------------------------------------------------
-	function getWebsite()
-	{
-		$papar = array(
-			//'./espl/'=>'//espl.stats.gov.my/spl',
-			'./dtims/'=>'https://dtims.dosm.gov.my',
-			'./mailstats/'=>'https://mail.stats.gov.my',
-			'./newss/'=>'//newss.stats.gov.my',
-			'./newssPortalx/'=>'https://newss.statistics.gov.my/newss-portalx/ep/epLogin.seam',
-			'./msic/'=>'//msic.stats.gov.my',
-			'./porketdata'=>'https://pocketdata.stats.gov.my',
-			'./emasco/'=>'https://www.jobsmalaysia.gov.my/emasco',
-			'./eBGB/'=>'https://ebgb.dosm.gov.my',
-			'./qss/'=>'https://qss.stats.gov.my/qssv3',
-			'./ejob/'=>'https://ejob.stats.gov.my',
-			'./ideps/'=>'https://ideps.dosm.gov.my',
-			'./eict/'=>'http://eict.stats.gov.my',
-			'./cetak2/'=>'https://www.mycensus.gov.my/myipcs',
-		);
-
-		return $papar;
 	}
 #--------------------------------------------------------------------------------------------------
 	function getIdea()
