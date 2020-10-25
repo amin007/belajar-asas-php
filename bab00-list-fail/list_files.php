@@ -149,9 +149,6 @@
 			'./ejob/'=>'https://ejob.stats.gov.my',
 			'./ideps/'=>'https://ideps.dosm.gov.my',
 			'./eict/'=>'http://eict.stats.gov.my',
-			'./semaksuhu/'=>'https://docs.google.com/forms/d/e/'
-			. '1FAIpQLSdNwcU6cQ0nv_F4Z4_nuq7mNHmQXVgX9ZiZmc3UeQdO6ekhDQ/viewform',
-			'./cetak/'=>'//10.69.112.9',
 			'./cetak2/'=>'https://www.mycensus.gov.my/myipcs',
 		);
 
