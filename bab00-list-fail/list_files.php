@@ -143,29 +143,31 @@
 		$ipAdd = get_client_ip();
 		$failIni = basename($_SERVER['PHP_SELF']);
 		$phpVersion = paparVersiPhp();
-		$kira = $kira01 = $kira02 = $kira03 = 0;
+		$kira[01] = $kira[02] = $kira[03] = 0;
+		$s1 = $s2 = $s3 = '';
 
 		# papar fail//diatas();
 		foreach(dnschanger() as $name => $web):
 			$data = explode('|', $web);
 			//$data0 = strlen($data[0]);
-			if(strlen($data[1]) > $kira01) $kira01 = strlen($data[1]);
-			if(strlen($data[2]) > $kira02) $kira02 = strlen($data[2]);
-			if(strlen($data[3]) > $kira03) $kira03 = strlen($data[3]);
+			if(strlen($data[1]) > $kira[01]) $kira[01] = strlen($data[1]);
+			if(strlen($data[2]) > $kira[02]) $kira[02] = strlen($data[2]);
+			if(strlen($data[3]) > $kira[03]) $kira[03] = strlen($data[3]);
 		endforeach;
-		echo "<pre>kira03 = $kira03 <hr>";
+		echo "<pre><hr>";
 		foreach(dnschanger() as $name => $web):
 			$data = explode('|', $web);
-			$g = "\n+-"; for($i = 1;$i < $kira01; $i++): $g .= '-'; endfor;
-			$g .= '-+-'; for($i = 1;$i < $data2; $i++): $g .= '-'; endfor;
-			$g .= '-+-'; for($i = 1;$i < $kira03; $i++): $g .= '-'; endfor;
+			$g = "\n+-"; for($i = 1;$i < $kira[01]; $i++): $g .= '-'; endfor;
+			$g .= '-+-'; for($i = 1;$i < $kira[02]; $i++): $g .= '-'; endfor;
+			$g .= '-+-'; for($i = 1;$i < $kira[03]; $i++): $g .= '-'; endfor;
 			$g .= '-+';
 			# papar
 			echo "$g\n| " . $data[1];
-			for($i = 1; $i < ($kira01 - strlen($data[1]) + 1); $i++): echo " "; endfor;
-			echo "|" . $data[2] . " |" . $data[3];
-			$space = $kira03 - strlen($data[3]) + 1;
-			for($i = 1; $i < $space; $i++): echo " "; endfor;
+			for($i = 1; $i < ($kira[01] - strlen($data[1]) + 1); $i++): echo " "; endfor;
+			echo "|" . $data[2];
+			for($i = 1; $i < ($kira[02] - strlen($data[2]) + 1); $i++): echo " "; endfor;
+			echo " |" . $data[3];
+			for($i = 1; $i < ($kira[03] - strlen($data[3]) + 1); $i++): echo " "; endfor;
 			echo " |";
 		endforeach; echo $g . '</pre>';
 
