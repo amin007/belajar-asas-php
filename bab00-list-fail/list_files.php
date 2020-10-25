@@ -101,15 +101,14 @@
 #--------------------------------------------------------------------------------------------------
 	function kiraPaparan()
 	{
-		$kira[01] = 0;
-		$kira[02] = 16;
-		$kira[03] = 16;
+		$kira[01] = $kira[02] = $kira[03] = 0;
+		//$kira[02] = 16;$kira[03] = 16;
 		foreach(dnschanger() as $name => $web):
 			$data = explode('|', $web);
 			//$data0 = strlen($data[0]);
 			if(strlen($data[1]) > $kira[01]) $kira[01] = strlen($data[1]);
-			//if(strlen($data[2]) > $kira[02]) $kira[02] = strlen($data[2]);
-			//if(strlen($data[3]) > $kira[03]) $kira[03] = strlen($data[3]);
+			if(strlen($data[2]) > $kira[02]) $kira[02] = strlen($data[2]);
+			if(strlen($data[3]) > $kira[03]) $kira[03] = strlen($data[3]);
 		endforeach;
 
 		return $kira;
@@ -125,11 +124,11 @@
 		$semak03 = ($kira[03] - strlen($data[3]) + 1);
 		# papar
 			$p = "\n<code>| " . $data[1];
-			for($i = 1; $i < $semak01; $i++): $p .= "-"; endfor;
+			for($i = 1; $i < $semak01; $i++): $p .= "&nbsp;"; endfor;
 			$p .=  "|" . $data[2];
-			for($i = 1; $i < $semak02; $i++): $p .= "-"; endfor;
+			for($i = 1; $i < $semak02; $i++): $p .= "&nbsp;"; endfor;
 			$p .= "|" . $data[3];
-			for($i = 1; $i < $semak03; $i++): $p .= "-"; endfor;
+			for($i = 1; $i < $semak03; $i++): $p .= "&nbsp;"; endfor;
 			$p .= "|</code><hr>";
 		#
 		return $p;
