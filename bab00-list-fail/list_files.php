@@ -158,17 +158,15 @@
 		foreach(dnschanger() as $name => $web):
 			$data = explode('|', $web);
 			$g = "\n+-"; for($i = 1;$i < $kira[01]; $i++): $g .= '-'; endfor;
-			$g .= '-+-'; for($i = 1;$i < $kira[02]; $i++): $g .= '-'; endfor;
-			$g .= '-+-'; for($i = 1;$i < $kira[03]; $i++): $g .= '-'; endfor;
-			$g .= '-+';
+			$g .= '-+'; for($i = 1;$i < $kira[02]; $i++): $g .= '-'; endfor;
+			$g .= '-+'; for($i = 1;$i < $kira[03]; $i++): $g .= '-'; endfor;
+			$g .= '--+';
+			for($i = 1; $i < ($kira[01] - strlen($data[1]) + 1); $i++): $s1.=" "; endfor;
+			for($i = 1; $i < ($kira[02] - strlen($data[2]) + 1); $i++): $s2.=" "; endfor;
+			for($i = 1; $i < ($kira[03] - strlen($data[3]) + 1); $i++): $s3.=" "; endfor;
 			# papar
-			echo "$g\n| " . $data[1];
-			for($i = 1; $i < ($kira[01] - strlen($data[1]) + 1); $i++): echo " "; endfor;
-			echo "|" . $data[2];
-			for($i = 1; $i < ($kira[02] - strlen($data[2]) + 1); $i++): echo " "; endfor;
-			echo " |" . $data[3];
-			for($i = 1; $i < ($kira[03] - strlen($data[3]) + 1); $i++): echo " "; endfor;
-			echo " |";
+			echo "$g\n| " . $data[1] . "$s1|" . $data[2] . "$s2|" . $data[3]. "$s3 |";
+			$s1 = $s2 = $s3 = '';
 		endforeach; echo $g . '</pre>';
 
 		//dibawah();
