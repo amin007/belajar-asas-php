@@ -270,6 +270,133 @@
 		return $ipaddress . "<br>\n";
 	}
 #--------------------------------------------------------------------------------------------------
+	function contohBorang()
+	{
+		diatas('Borang Bootstrap');
+		print <<<END
+<!-- mula - borang utama ---------------------------------------------------------------------------------------------- -->
+<form method="POST" action="" class="form-horizontal">
+<!-- mula - input tengah ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div class="form-group row">
+	<div class="col-1"></div>
+	<div class="col-8">
+		<pre class="input-group-text">
+		Contoh Borang Bersama Input</pre>
+	</div>
+</div>
+<div class="form-group row">
+	<div class="col-1"></div>
+	<label for="inputTajuk" class="col-sm-2 control-label">&nbsp;Tajuk</label>
+	<div class="col-sm-6">
+		<div class="input-group input-group-lg">
+		<span class="input-group-prepend"><span class="input-group-text">{data-contoh}</span></span>
+		<input type="text" class="form-control">
+		</div>
+	</div>
+</div>
+<div class="form-group row">
+	<div class="col-1"></div>
+	<label for="inputTajuk" class="col-sm-2 control-label">&nbsp;Tarikh</label>
+	<div class="col-sm-6">
+		<div class="input-group input-group-sm">
+		<span class="input-group-prepend"><span class="input-group-text"><input type="checkbox" value="x"></span></span>
+		<input type="date" class="form-control date-picker"
+		placeholder="Cth: 2014-05-01" id="date" data-date-format="yyyy/mm/dd" />
+		</div>
+	</div>
+</div>
+<div class="form-group row">
+	<div class="col-1"></div>
+	<label for="inputTajukC" class="col-sm-2 control-label">&nbsp;Select-Option</label>
+	<div class="col-sm-6"><div class="input-group input-group-sm">
+		<span class="input-group-prepend"><span class="input-group-text">{pilih-hari}</span></span>
+			<select class="form-control">
+			<option>#ceritahariahad #berfikir</option>
+			<option>#ceritahariisnin #aturcara #programming</option>
+			<option>#ceritahariselasa #apps</option>
+			<option>#ceritaharirabu #bisnes</option>
+			<option>#ceritaharikhamis #pelaburan</option>
+			<option>#ceritaharijumaat</option>
+			<option>#ceritaharisabtu #rnd</option>
+			</select>
+	</div></div>
+</div>
+<div class="form-group row">
+	<div class="col-1"></div>
+	<label for="inputTajukB" class="col-sm-2 control-label">&nbsp;Isi Kandungan</label>
+	<div class="col-sm-6">
+		<textarea rows="1" cols="20"
+		class="form-control"></textarea>
+		<pre class="input-group-text">{data-contohB}</pre>
+	</div>
+</div>
+<div class="form-group row">
+	<div class="col-1"></div>
+	<label for="inputNotaKaki" class="col-sm-2 control-label">&nbsp;NotaKaki</label>
+	<div class="col-sm-6">
+		<div class="input-group input-group-sm">
+		<span class="input-group-prepend"><span class="input-group-text">{data-contoh}</span></span>
+		<input type="text" class="form-control">
+		</div>
+	</div>
+</div>
+<div class="form-group row">
+	<div class="col-1"></div>
+	<label for="inputNotaKaki" class="col-sm-2 control-label">&nbsp;Blockquote</label>
+	<div class="col-sm-6">
+		<blockquote>
+		<p class="form-control-static text-info">#ceritahari #hashtag</p>
+<!-- ##################################################################################################### -->
+<b>Bismillah. Apa itu Lorem Ipsum?</b><br><br>
+Lorem Ipsum adalah text contoh digunakan didalam industri pencetakan dan typesetting. <br><br>
+Lorem Ipsum telah menjadi text contoh semenjak tahun ke 1500an, <br><br>
+apabila pencetak kurang dikenali mengambil galeri cetakan dan menjadikannya buku spesimen. <br><br>
+Ia telah bertahan bukan hanya selama lima kurun, <br><br>
+tetapi telah melonjak ke era typesetting elektronik, dengan tiada perubahan ketara. <br><br>
+Ia telah dipopularkan semula pada tahun 1960an dengan penerbitan Letraset <br><br>
+yang membawa kandungan Lorem Ipsum, dan lebih terkini dengan <br><br>
+aplikasi pencetakan desktop seperti Adobe PageMaker (formerly Aldus PageMaker) <br><br>
+yang telah menyertakan satu versi Lorem Ipsum. <br><br>
+Bersambung ... <br><br>
+<small> Pautan : <cite title="Source Title">http://ms.lipsum.com</cite></small>
+<!-- ##################################################################################################### -->
+		</blockquote>
+		<div class="input-group input-group-sm">
+			<i class="fa fa-share-alt fa-5x"></i>&nbsp;
+			<i class="fab fa-facebook-square fa-5x"></i>&nbsp;
+			<i class="fab fa-twitter-square fa-5x"></i>&nbsp;
+			<i class="fab fa-snapchat-square fa-5x"></i>&nbsp;
+		</div>
+	</div>
+</div>
+<div class="form-group row">
+	<div class="col-1"></div>
+	<label for="inputNotaKaki" class="col-sm-2 control-label">&nbsp;Text-info</label>
+	<div class="col-sm-6">
+		<p class="form-control-static text-info">{contoh-data}</p>
+	</div>
+</div>
+
+<div class="form-group row">
+	<div class="col-1"></div>
+	<div class="col-sm-8 input-group-text">
+		<div class="input-group input-group-lg">
+			<span class="input-group-prepend "><span class="input-group-text
+			border border-secondary rounded-lg">
+			Contoh Borang Bersama Input Submit</span></span>
+			<input type="hidden" name="jadual" value="@jadual">
+			<input type="submit" name="Simpan" value="Simpan" class="btn btn-primary btn-large">
+			<input type="reset" name="Reset" value="Reset" class="btn btn-secondary btn-large">
+		</div>
+	</div>
+</div>
+<!-- tamat - input tengah  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+</form>
+<!-- tamat - borang utama ---------------------------------------------------------------------------------------------- -->
+END;
+		dibawah();
+	}
+#--------------------------------------------------------------------------------------------------
 	function diatas($title = 'List Folder')
 	{
 		print <<<END
