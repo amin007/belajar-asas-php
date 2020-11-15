@@ -147,7 +147,7 @@
 		$s1 = $s2 = $s3 = '';
 
 		# papar fail//diatas();
-		foreach(dnschanger() as $name => $web):
+		foreach(dnschanger2() as $name => $web):
 			$data = explode('|', $web);
 			//$data0 = strlen($data[0]);
 			if(strlen($data[1]) > $kira[01]) $kira[01] = strlen($data[1]);
@@ -155,7 +155,7 @@
 			if(strlen($data[3]) > $kira[03]) $kira[03] = strlen($data[3]);
 		endforeach;
 		echo "<pre><hr>";
-		foreach(dnschanger() as $name => $web):
+		foreach(dnschanger2() as $name => $web):
 			$data = explode('|', $web);
 			$g = "\n+-"; for($i = 1;$i < $kira[01]; $i++): $g .= '-'; endfor;
 			$g .= '-+'; for($i = 1;$i < $kira[02]; $i++): $g .= '-'; endfor;
