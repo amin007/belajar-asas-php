@@ -34,11 +34,11 @@ function dibawah()
 function data()
 {
 	$data = array(
-		array('id'=>1,'nama'=>'Awek001','notel'=>'012345678'),
-		array('id'=>2,'nama'=>'Awek002','notel'=>'013456789'),
-		array('id'=>3,'nama'=>'Awek003','notel'=>'014567890'),
-		array('id'=>4,'nama'=>'Awek004','notel'=>'015678901'),
-		array('id'=>5,'nama'=>'Awek005','notel'=>'016789012')
+		array('id'=>'a1','nama'=>'Awek001','notel'=>'012345678'),
+		array('id'=>'a2','nama'=>'Awek002','notel'=>'013456789'),
+		array('id'=>'a3','nama'=>'Awek003','notel'=>'014567890'),
+		array('id'=>'a4','nama'=>'Awek004','notel'=>'015678901'),
+		array('id'=>'a5','nama'=>'Awek005','notel'=>'016789012')
 		);
 
 	return $data;
