@@ -20,12 +20,11 @@ diatas('Infaq');
 </thead>
 <tbody>
 <?php
-$kira = 1;
-foreach($data as $row):
+foreach($data as $kira => $row):
 ?>
 	<tr>
 	<td><input type="hidden" name="table[<?php echo $row['id'] ?>][id]" value="<?php echo $row['id'] ?>">
-		<?php echo $kira++ ?>|<?php echo $row['id'] ?>
+		<?php echo $kira+1 ?>|<?php echo $row['id'] ?>
 	</td>
 	<td><?php echo $row['nama'] ?></td>
 	<td><?php echo $row['notel'] ?></td>
