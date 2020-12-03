@@ -1,6 +1,6 @@
 <?php
 	# semak data dalam $_POST
-	echo '<pre>';	print_r($_POST); echo '</pre>';//*/
+	echo '<pre>'; print_r($_POST); echo '</pre>';//*/
 
 if (count($_POST) > 0)
 {
