@@ -64,6 +64,28 @@
 		return $retval;
 	}
 #--------------------------------------------------------------------------------------------------
+	function folderFiles()
+	{
+		$dirlist = getFileList("./");
+		//echo '<tr><td> name</td><td> type</td><td> size</td><td> lastmod</td></tr>';
+		$folder = $files = array();
+		foreach($dirlist as $key => $value):
+			if ($value['type'] == 'dir'):
+				$folder[$key]['name'] = $value['name'];
+				$folder[$key]['type'] = $value['type'];
+				$folder[$key]['size'] = $value['size'];
+				$folder[$key]['lastmod'] = $value['lastmod'];
+			else:
+				$files[$key]['name'] = $value['name'];
+				$files[$key]['type'] = $value['type'];
+				$files[$key]['size'] = $value['size'];
+				$files[$key]['lastmod'] = $value['lastmod'];
+			endif;
+		endforeach;
+
+		return array($folder,$files);
+	}
+#--------------------------------------------------------------------------------------------------
 	function pautan($name,$web)
 	{
 		$icon1 = '<i class="fas fa-globe-asia fa-spin"></i>';
