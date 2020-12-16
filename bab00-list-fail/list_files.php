@@ -98,20 +98,15 @@
 #--------------------------------------------------------------------------------------------------
 	function list_files()
 	{
-		$dirlist = getFileList("./");
-		//echo "<pre>",print_r($dirlist),"</pre>";
-		//echo '<tr><td> name</td><td> type</td><td> size</td><td> lastmod</td></tr>';
+		list($folder,$files) = folderFiles();
 		$ipAdd = get_client_ip();
 		$failIni = basename($_SERVER['PHP_SELF']);
 		$phpVersion = paparVersiPhp();
 		diatas();
 		echo "\n$failIni | $phpVersion |$ipAdd<hr><table><tr><td valign=\"top\">";
-		foreach($dirlist as $key02 => $value):
-			if ($value['type'] == 'dir'):
-				echo pautan($value['name'],$value['name']) . '';
-			else:echo '';endif;
+		foreach($folder as $key => $value):
+			echo pautan($value['name'],$value['name']) . '';
 		endforeach;
-		echo "\n\n</td><td valign=\"top\">\n";
 		echo "\n\n</td><td valign=\"top\">\n";
 		foreach(getIdea() as $name => $web): echo pautan($name,$web); endforeach;
 		echo "\n\n</td><td valign=\"top\">\n";
