@@ -1,52 +1,52 @@
 <?php
 #--------------------------------------------------------------------------------------------------
-/*
-$fileList = glob('/*.*');
-foreach($fileList as $filename)
-{
-	# Use the is_file function to make sure that it is not a directory.
-	if(is_file($filename))
+	/*
+	$fileList = glob('/*.*');
+	foreach($fileList as $filename)
 	{
-		echo $filename . '<br>';
+		# Use the is_file function to make sure that it is not a directory.
+		if(is_file($filename))
+		{
+			echo $filename . '<br>';
+		}
 	}
-}
-*/
+	*/
 #--------------------------------------------------------------------------------------------------
-function getFileList($dir)
-{
-	# array to hold return value
-	$retval = [];
-	# add trailing slash if missing
-	if(substr($dir, -1) != "/") { $dir .= "/"; }
-	# open pointer to directory and read list of files
-	$d = @dir($dir) or die("getFileList: Failed opening directory {$dir} for reading");
-	while(FALSE !== ($entry = $d->read()))
+	function getFileList($dir)
 	{
-		# skip hidden files
-		if($entry{0} == ".") continue;
-		if(is_dir("{$dir}{$entry}"))
+		# array to hold return value
+		$retval = [];
+		# add trailing slash if missing
+		if(substr($dir, -1) != "/") { $dir .= "/"; }
+		# open pointer to directory and read list of files
+		$d = @dir($dir) or die("getFileList: Failed opening directory {$dir} for reading");
+		while(FALSE !== ($entry = $d->read()))
 		{
-			$retval[] = [
-			'name' => "{$dir}{$entry}/",
-			'type' => filetype("{$dir}{$entry}"),
-			'size' => 0,
-			'lastmod' => filemtime("{$dir}{$entry}")
-			];
+			# skip hidden files
+			if($entry{0} == ".") continue;
+			if(is_dir("{$dir}{$entry}"))
+			{
+				$retval[] = [
+				'name' => "{$dir}{$entry}/",
+				'type' => filetype("{$dir}{$entry}"),
+				'size' => 0,
+				'lastmod' => filemtime("{$dir}{$entry}")
+				];
+			}
+			elseif(is_readable("{$dir}{$entry}"))
+			{
+				$retval[] = [
+				'name' => "{$dir}{$entry}",
+				'type' => mime_content_type("{$dir}{$entry}"),
+				'size' => filesize("{$dir}{$entry}"),
+				'lastmod' => filemtime("{$dir}{$entry}")
+				];
+			}
 		}
-		elseif(is_readable("{$dir}{$entry}"))
-		{
-			$retval[] = [
-			'name' => "{$dir}{$entry}",
-			'type' => mime_content_type("{$dir}{$entry}"),
-			'size' => filesize("{$dir}{$entry}"),
-			'lastmod' => filemtime("{$dir}{$entry}")
-			];
-		}
-	}
 
-	$d->close();
-	return $retval;
-}
+		$d->close();
+		return $retval;
+	}
 #--------------------------------------------------------------------------------------------------
 	function folderFiles()
 	{
@@ -70,30 +70,32 @@ function getFileList($dir)
 		return array($folder,$files);
 	}
 #--------------------------------------------------------------------------------------------------
-function pautan($name,$web)
-{
-	return '<i class="far fa-folder fa-spin"></i>'
-	. '<a target="_blank" href="' . $web . '">'
-	. $name . '</a><hr>';
-}
+	function pautan($name,$web)
+	{
+		return '<i class="far fa-folder fa-spin"></i>'
+		. '<a target="_blank" href="' . $web . '">'
+		. $name . '</a><hr>';
+	}
 #--------------------------------------------------------------------------------------------------
-function list_files()
-{
-	$dirlist = getFileList("./");
-	//echo "<pre>",print_r($dirlist),"</pre>";
-	//echo '<tr><td> name</td><td> type</td><td> size</td><td> lastmod</td></tr>';
-	diatas();
-	foreach($dirlist as $key02 => $value):
-		if ($value['type'] != 'dir'):
-			echo "\n" . pautan($value['name'],$value['name']);
-		else:echo '';endif;
-	endforeach;
-	dibawah();
-}
+	function list_files()
+	{
+		list($folder,$files) = folderFiles();
+		diatas();
+		echo "\n<hr><table><tr><td valign=\"top\">";
+			foreach($folder as $key => $value):
+				echo pautan($value['name'],$value['name']) . '';
+			endforeach;
+		echo "\n\n</td><td valign=\"top\">\n";
+			foreach($files as $key => $value):
+				echo pautan($value['name'],$value['name']) . '';
+			endforeach;
+		echo "\n</td></tr></table>";
+		dibawah();
+	}
 #--------------------------------------------------------------------------------------------------
-function diatas($title = 'List Folder')
-{
-print <<<END
+	function diatas($title = 'List Folder')
+	{
+		print <<<END
 <!doctype html>
 <html lang="en">
 <head>
@@ -133,11 +135,12 @@ table.excel tbody td
 <body>
 
 END;
-}
+		#
+	}
 #--------------------------------------------------------------------------------------------------
-function dibawah()
-{
-	print <<<END
+	function dibawah()
+	{
+		print <<<END
 
 <!-- Footer
 =============================================================================================== -->
@@ -158,6 +161,7 @@ function dibawah()
 </body>
 </html>
 END;
-}
+		#
+	}
 #--------------------------------------------------------------------------------------------------
 list_files();
