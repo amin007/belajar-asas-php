@@ -79,6 +79,16 @@ $fontSize = 'font-size: 30px';
 		<li> PHP 7 menyokong pengendali baru (seperti pengendali kapal angkasa: <code><=></code>) </li>
 		</ul>
 	</section>
+	<section><h4>Slide 1.6 - Pop Kuiz</h4><hr/>
+		<ul style="<?php echo $fontSize ?>">
+		<li> Sebut satu perkara "Apa Yang Anda Perlu Tahu?" </li>
+		<li> Sebut satu perkara "Apa itu PHP?" </li>
+		<li> Sebut satu perkara "Apa itu Fail PHP?" </li>
+		<li> Sebut satu perkara "Apa yang Boleh Dilakukan PHP?" </li>
+		<li> Sebut satu perkara "Mengapa PHP?" </li>
+		<li> Sebut satu perkara "Apa yang baru dalam PHP 7?" </li>
+		</ul>
+	</section>
 </section>
 <!-- ========================================================================================== -->
 <section>
