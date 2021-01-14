@@ -51,9 +51,16 @@ $medan = 'NGDBBP2020,UB,TK,IR,NAMA,ETNIK,ALAMAT,
 $carian = $susun = null;
 $carian[] = array(
 	'atau' => 'WHERE',
-	'medan' => 'alamat',
+	'medan' => 'NGDBBP2020',
 	'fix' => '%like%',
-	'apa' => 'b%18%tengah',
+	'apa' => '01138%',
+	//'akhir' => '',
+);
+$carian[] = array(
+	'atau' => 'AND',
+	'medan' => 'NAMAKAMPUNG',
+	'fix' => '%like%',
+	'apa' => 'Kampung Parit Tunggul%',
 	//'akhir' => '',
 );
 #--------------------------------------------------------------------------------------------------
@@ -74,6 +81,7 @@ $id = 'id="myTable"';
 $class = $id . ' class="w3-table-all w3-hoverable w3-small"';// w3css
 foreach($senarai as $myTable => $row):
 	$papar = binaJadual($row, $myTable, $class);
+	$bilRow = count($row);
 endforeach;
 
 #--------------------------------------------------------------------------------------------------
@@ -93,12 +101,15 @@ endforeach;
 }
 </style>
 <div class="w3-container">
+<div class="w3-cell w3-border w3-round w3-blue">
+Ada <?php echo $bilRow ?> yang wujud.
+</div><!-- / class="w3-cell0 w3-round" -->
 <div class="w3-cell w3-border w3-round w3-grey">
 Anda mencari
 </div><!-- / class="w3-cell0 w3-round" -->
 <div class="w3-cell w3-border w3-round w3-green">
 <?php
-	echo '' . $carian[0]['apa'] . '';
+	echo '=' . $carian[0]['apa'] . '';
 ?>
 </div><!-- / class="w3-cell0 w3-round" -->
 </div><!-- / class="w3-container" -->
