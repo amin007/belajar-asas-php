@@ -53,7 +53,7 @@ $carian[] = array(
 	'atau' => 'WHERE',
 	'medan' => 'alamat',
 	'fix' => '%like%',
-	'apa' => 'balang%laut',
+	'apa' => 'b%18%tengah',
 	//'akhir' => '',
 );
 #--------------------------------------------------------------------------------------------------
@@ -92,10 +92,20 @@ endforeach;
 	position: relative;
 }
 </style>
+<div class="w3-container">
+<div class="w3-cell w3-border w3-round w3-grey">
+Anda mencari
+</div><!-- / class="w3-cell0 w3-round" -->
+<div class="w3-cell w3-border w3-round w3-green">
+<?php
+	echo '' . $carian[0]['apa'] . '';
+?>
+</div><!-- / class="w3-cell0 w3-round" -->
+</div><!-- / class="w3-container" -->
 <div class="input-wrapper">
 	<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for alamat">
 	<label for="stuff" class="fas fa-search input-icon"></label>
-</div>
+</div><!-- / class="input-wrapper" -->
 <?php
 echo $papar;
 //dibawah();
