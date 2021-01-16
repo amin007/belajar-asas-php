@@ -1,7 +1,10 @@
 <?php
 #--------------------------------------------------------------------------------------------------
+# https://www.geeksforgeeks.org/how-to-search-by-multiple-key-value-in-php-array/
+#--------------------------------------------------------------------------------------------------
 include 'tatasusunan.php';
 #--------------------------------------------------------------------------------------------------
+	# PHP program to search for multiple key=>value pairs in array
 	function search($array, $search_list)
 	{ 
 		# Create the result array
@@ -30,10 +33,6 @@ include 'tatasusunan.php';
 		return $result;
 	}
 #--------------------------------------------------------------------------------------------------
-# PHP program to search for multiple 
-# key=>value pairs in array 
-
-
 # Multidimensional array for students list 
 $arr = array( 
 	1 => array(
