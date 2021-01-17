@@ -53,16 +53,16 @@ $carian[] = array(
 	'atau' => 'WHERE',
 	'medan' => 'NGDBBP2020',
 	'fix' => '%like%',
-	'apa' => '01138%',
+	'apa' => '',
 	//'akhir' => '',
 );
-$carian[] = array(
+/*$carian[] = array(
 	'atau' => 'AND',
 	'medan' => 'NAMAKAMPUNG',
 	'fix' => '%like%',
 	'apa' => 'Kampung Parit Tunggul%',
 	//'akhir' => '',
-);
+);*/
 #--------------------------------------------------------------------------------------------------
 /*$susun[0]['mengira'] = 1000;
 $susun[0]['kumpul'] = 1000;
