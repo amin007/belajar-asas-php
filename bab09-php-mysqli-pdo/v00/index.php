@@ -45,13 +45,13 @@ LIMIT 1000
 */
 #--------------------------------------------------------------------------------------------------
 $myTable = '`inlist_all_bp_vs_tk_pom_2020`';
-$medan = 'NGDBBP2020,UB,TK,IR,NAMA,ETNIK,ALAMAT,
- CATATAN,TEL_NO,NAMAKAMPUNG,LOKALITI';
+$cantum = 'concat_ws("-",SUBSTRING(NGDBBP2020,1,2),SUBSTRING(NGDBBP2020,3,3),SUBSTRING(NGDBBP2020,6,3),TK) as BP,';
+$medan = $cantum . 'UB,IR,NAMA,ETNIK,ALAMAT,CATATAN,TEL_NO,NAMAKAMPUNG,LOKALITI';
  #--------------------------------------------------------------------------------------------------
 $carian = $susun = null;
 $carian[] = array(
 	'atau' => 'WHERE',
-	'medan' => 'NGDBBP2020',
+	'medan' => 'ALAMAT',
 	'fix' => '%like%',
 	'apa' => '',
 	//'akhir' => '',
