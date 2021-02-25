@@ -38,61 +38,110 @@ Bahagian A (Butir-butir Ahli Isi Rumah)
 	Bahagian B (Pekerjaan Semasa) - PERLU DIISI OLEH AHLI YANG BERUMUR 15 TAHUN KEATAS
 </td></tr>
 <tr><td>
-	S1.	Adakah anda bekerja sekurang-kurangnya 										S7.	Adakah anda mencari kerja pada minggu rujukan?
-		SEJAM (Minggu Rujukan) kerana upah atau										1	Ya				Terus ke S11 dan seterusnya
-		keuntungan keluarga? (Termasuk yang bekerja sendiri). 						2	Tidak
-		1	Ya				Terus ke S3 dan seterusnya
-		2	Tidak																	S7a.	Adakah anda mencari kerja dalam masa 3 bulan yang lepas?
-																					1	Ya
-	S2.	Walaupun anda tidak bekerja pada minggu rujukan,							2	Tidak
-		adakah anda mempunyai apa-apa pekerjaan, kerja ladang,
-		perusahaan atau perusahaan-perusahaan keluarga lain 						S8.	Kenapa anda tidak mencari kerja pada minggu rujukan?
-		yang anda akan kerjakan kembali?											01	Bersekolah/masih belajar/program latihan
-		1	Ya				Terus ke S6 dan seterusnya								02	Kerja rumah/tanggungjawab keluarga/komuniti
-		2	Tidak				Terus ke S7 dan seterusnya							03	Percaya tiada kerja/tiada kerja yang sesuai
-																					04	Keadaan cuaca
-	S3.	Berapa jam anda bekerja pada minggu rujukan 								05	Sakit/bersalin atau keguguran
-		(termasuk kerja-kerja tambahan, pekerjaan kedua, pekerjaan					06	Akan memulai menjawat kerja baru
-		ketiga dan lain-lain)?														07	Akan melanjutkan pelajaran
-							Jika 30 jam atau lebih, terus ke S14					08	Hilang upaya/keilatan
-																					09	Tiada minat/baru tamat belajar
-	S4.	Mengapa anda bekerja kurang dari 30 jam 									10	"Menunggu keputusan permohonan pekerjaan/"
-		pada minggu rujukan?															telah mencari kerja terdahulu dari minggu lalu
-		1	Kerja tidak mencukupi													11	Tiada kelayakan/kurang kemahiran
-		2	Memang keadaan kerja begitu												12	Bersara
-		3	Bersara																	13	Lanjut usia
-		4	Lanjut usia
-		5	Kerja rumah/tanggungjawab keluarga/komuniti								S9.	Adakah anda ingin bekerja jika peluang pekerjaan atau perniagaan tersedia?
-		6	Cuti
-		7	Sakit/cedera															1	Ya
-		8	Keadaan cuaca															2	Tidak
-		9	Perintah Kawalan Pergerakan (PKP) 2.0
+	S1.	Adakah anda bekerja sekurang-kurangnya
+		SEJAM (Minggu Rujukan) kerana upah atau
+		keuntungan keluarga? (Termasuk yang bekerja sendiri).
+		<li>1	Ya	- Terus ke S3 dan seterusnya</li>
+		<li>2 Tidak</li>
 
-	S5.	Jika bekerja kurang dari 30 jam pada minggu rujukan, 						S10.	Jika peluang pekerjaan atau perniagaan tersedia,
-		adakah anda BOLEH dan SANGGUP menerima tambahan 												adakah anda..
-		bilangan jam bekerja?														1	Boleh mula bekerja dalam tempoh 7 hari yang lalu
-		1	Ya
-		2	Tidak																	2	Boleh mula bekerja dalam tempoh dua minggu akan datang
-	S6.	Mengapa anda tidak bekerja pada minggu rujukan?								3	Belum bersedia untuk bekerja
-		1	Sakit/cedera
-		2	Keadaan cuaca															S11.	"Apakah langkah-langkah yang telah anda ambil untuk mendapatkan kerja pada minggu rujukan?
-		3	Cuti
-		4	Henti kerja sementara (pekerja bergaji)									1	Jabatan Tenaga Kerja/Agensi Pekerjaan
-		5	Bukan musim/luar musim/													2	Menjawab iklan/mengiklan
-			memang keadaan kerja begitu												3	Menghantar surat/emel permohonan
-		6	Perintah Kawalan Pergerakan (PKP) 2.0									4	Beritahu sahabat/saudara mara
-		7	Henti kerja sementara (pekerja tidak bergaji)							5	Menghadiri karnival kerjaya/keusahawanan
-		8	Kehilangan Pekerjaan ( PKP 2.0)
-	S12.	Berapa lamakah anda sudah mencari kerja?								S13.	Apakah anda buat pada minggu rujukan?
-		1	Kurang dari 3 bulan														1	Masih belajar
-		2	3 bulan–kurang dari 6 bulan												2	Baru berhenti sekolah
-		3	6 bulan–kurang dari 1 tahun												3	Kerja rumah/tanggungjawab keluarga/komuniti
-		4	1–3 tahun																4	Hilang upaya/keilatan
-		5	Lebih daripada 3 tahun													5	Bukan musim/luar musim
-																					6	Henti kerja sementara
-																					7	Bersara
-																					8	Lanjut usia
-	</td></tr>
+	S2.	Walaupun anda tidak bekerja pada minggu rujukan,
+		adakah anda mempunyai apa-apa pekerjaan, kerja ladang,
+		perusahaan atau perusahaan-perusahaan keluarga lain
+		yang anda akan kerjakan kembali?
+		<li>1	Ya	- Terus ke S6 dan seterusnya</li>
+		<li>2 Tidak -	Terus ke S7 dan seterusnya</li>
+
+	S3.	Berapa jam anda bekerja pada minggu rujukan
+		(termasuk kerja-kerja tambahan, pekerjaan kedua, pekerjaan
+		ketiga dan lain-lain)?
+							Jika 30 jam atau lebih, terus ke S14
+
+	S4.	Mengapa anda bekerja kurang dari 30 jam	pada minggu rujukan?
+		<li>1	Kerja tidak mencukupi</li>
+		<li>2	Memang keadaan kerja begitu</li>
+		<li>3	Bersara</li>
+		<li>4	Lanjut usia</li>
+		<li>5	Kerja rumah/tanggungjawab keluarga/komuniti</li>
+		<li>6	Cuti</li>
+		<li>7	Sakit/cedera</li>
+		<li>8	Keadaan cuaca</li>
+		<li>9	Perintah Kawalan Pergerakan (PKP) 2.0</li>
+
+	S5.	Jika bekerja kurang dari 30 jam pada minggu rujukan,
+		adakah anda BOLEH dan SANGGUP menerima tambahan
+		bilangan jam bekerja?
+		<li>1	Ya</li>
+		<li>2	Tidak</li>
+	S6.	Mengapa anda tidak bekerja pada minggu rujukan?
+		1	Sakit/cedera</li>
+		<li>2	Keadaan cuaca</li>
+		<li>3	Cuti</li>
+		<li>4	Henti kerja sementara (pekerja bergaji)</li>
+		<li>5	Bukan musim/luar musim/memang keadaan kerja begitu</li>
+		<li>6	Perintah Kawalan Pergerakan (PKP) 2.0</li>
+		<li>7	Henti kerja sementara (pekerja tidak bergaji)</li>
+		<li>8	Kehilangan Pekerjaan ( PKP 2.0)</li>
+
+		S12.	Berapa lamakah anda sudah mencari kerja?
+		1	Kurang dari 3 bulan</li>
+		<li>2	3 bulan–kurang dari 6 bulan</li>
+		<li>3	6 bulan–kurang dari 1 tahun</li>
+		<li>4	1–3 tahun</li>
+		<li>5	Lebih daripada 3 tahun</li>
+		<li>
+	</td>
+	<td>
+		S7.	Adakah anda mencari kerja pada minggu rujukan?
+		<li>1	Ya	Terus ke S11 dan seterusnya</li>
+		<li>2	Tidak</li>
+
+		S7a.	Adakah anda mencari kerja dalam masa 3 bulan yang lepas?
+		<li>1	Ya</li>
+		<li>2	Tidak</li>
+
+		S8.	Kenapa anda tidak mencari kerja pada minggu rujukan?
+		01	Bersekolah/masih belajar/program latihan
+		02	Kerja rumah/tanggungjawab keluarga/komuniti
+		03	Percaya tiada kerja/tiada kerja yang sesuai
+		04	Keadaan cuaca
+		05	Sakit/bersalin atau keguguran
+		06	Akan memulai menjawat kerja baru
+		07	Akan melanjutkan pelajaran
+		08	Hilang upaya/keilatan
+		09	Tiada minat/baru tamat belajar
+		10	Menunggu keputusan permohonan pekerjaan/
+			telah mencari kerja terdahulu dari minggu lalu
+		11	Tiada kelayakan/kurang kemahiran
+		12	Bersara
+		13	Lanjut usia
+
+		S9.	Adakah anda ingin bekerja jika peluang pekerjaan atau perniagaan tersedia?
+		<li>1	Ya</li>
+		<li>2	Tidak</li>
+
+		S10.	Jika peluang pekerjaan atau perniagaan tersedia,adakah anda...
+		1	Boleh mula bekerja dalam tempoh 7 hari yang lalu
+		2	Boleh mula bekerja dalam tempoh dua minggu akan datang
+		3	Belum bersedia untuk bekerja
+
+		S11.	Apakah langkah-langkah yang telah anda ambil untuk mendapatkan kerja pada minggu rujukan?
+		1	Jabatan Tenaga Kerja/Agensi Pekerjaan
+		2	Menjawab iklan/mengiklan
+		3	Menghantar surat/emel permohonan
+		4	Beritahu sahabat/saudara mara
+		5	Menghadiri karnival kerjaya/keusahawanan
+
+		S13.	Apakah anda buat pada minggu rujukan?
+		1	Masih belajar
+		2	Baru berhenti sekolah
+		3	Kerja rumah/tanggungjawab keluarga/komuniti
+		4	Hilang upaya/keilatan
+		5	Bukan musim/luar musim
+		6	Henti kerja sementara
+		7	Bersara
+		8	Lanjut usia
+	</td>
+</tr>
 <tr><td>
 	Bahagian C (Kajian kesan COVID-19/ PKP 2.0) - PERLU DIISI OLEH AHLI YANG BERUMUR 15 TAHUN KEATAS<
 /td></tr>
@@ -138,8 +187,8 @@ iv) Taraf pekerjaan (semasa)"																ii) Pekerjaan						iii) Industri			
 </td></tr>
 <tr><td>
 	P4.	Adakah anda menerima sebarang insentif/ bantuan daripada kerajaan?
-		1	Ya
-		2	Tidak
+		<li>1	Ya
+		<li>2 Tidak</li>
 </td></tr>
 <tr><td>
 	P5.	Jika Ya, sila nyatakan pilihan berikut (Boleh pilih lebih daripada satu)
