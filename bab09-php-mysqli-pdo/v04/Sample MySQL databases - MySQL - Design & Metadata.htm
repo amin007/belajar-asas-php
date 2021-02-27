@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="https://124135-361502-raikfcquaxqncofqfm.stackpathdns.com/asset/img/favicon.ico?redesign">
+    <title>Sample MySQL databases - MySQL - Design &amp; Metadata</title>
+
+    
+        <script type="text/javascript" async="" src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/8w80jy7m.js"></script><script type="text/javascript" async="" src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/analytics.js"></script><script type="text/javascript" async="" src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/0511.js"></script><script async="" src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/gtm.js"></script><script src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/jquery-3.js"></script>
+
+            <!-- Facebook Open Graph -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://dataedo.com/kb/databases/mysql/sample-databases">
+        <meta property="og:title" content="Sample MySQL databases - MySQL - Design &amp; Metadata">
+        <meta property="og:image" content="https://124135-361502-raikfcquaxqncofqfm.stackpathdns.com/asset/img/banners/kb/databases/mysql.png">
+        
+        <!-- Twitter -->
+        <meta name="twitter:title" content="Sample MySQL databases - MySQL - Design &amp; Metadata">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@dataedo">
+        <meta name="twitter:image" content="https://124135-361502-raikfcquaxqncofqfm.stackpathdns.com/asset/img/banners/kb/databases/mysql.png">
+            
+            
+
+                <link rel="stylesheet" href="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/bootstrap.css">
+
+                <link rel="stylesheet" href="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/magnific-popup.css">
+
+                <link rel="stylesheet" href="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/materialdesignicons.css">
+        <link rel="stylesheet" href="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/line.css">
+
+                <link rel="stylesheet" href="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/owl_002.css">
+        <link rel="stylesheet" href="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/owl.css">
+
+                <link rel="stylesheet" href="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/style.css" type="text/css">
+
+                <link rel="stylesheet" href="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/default.css">
+
+                <link rel="stylesheet" href="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/zoom.css">
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MBZD859');</script>
+    <!-- End Google Tag Manager -->
+<script src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/count-data.js"></script></head>
+<body data-spy="scroll" data-target=".js-scrollspy" data-offset="200">
+                  
+<header id="topnav" class="defaultscroll sticky bg-white  ">
+    <div class="w-100" style="position: relative;">
+        <div class="container text-right pt-2 navbar-contact-bar " style="font-size: 0.85em; opacity: 0.5;">
+            <a class="mr-3" href="mailto:sales@dataedo.com"><i data-feather="mail" class="fea icon-sm mr-1"></i> sales@dataedo.com</a>
+            <a href="tel:+1 704-387-5078"><i data-feather="phone" class="fea icon-sm mr-1"></i> +1 704-387-5078</a>
+        </div>
+        <div class="container">
+            <!-- Logo container-->
+            <div class="mr-3">
+                <a class="logo" href="https://dataedo.com/">
+                    <img src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/dataedo-dark.svg" alt="Dataedo Logo" height="26">
+
+                                    </a>
+            </div>
+
+            <div class="buy-button d-lg-flex flex-row align-items-center">
+                <a href="https://dataedo.com/get-a-demo" class="mr-2">
+                    <div class="btn btn-outline-primary ">Get a demo</div>
+                                    </a>
+
+                <style>
+
+                </style>
+
+                <a href="https://dataedo.com/free-trial">
+                    <div class="btn btn-primary ">Free trial</div>
+                                    </a>
+
+                <ul class="navigation-menu  d-none d-lg-block position-relative">
+                    <li>
+                        <a id="search-desktop" href="javascript:void(0);" style="font-size: 16px;">
+                            <i class="uil uil-search"></i>
+                        </a>
+                        <div id="search-desktop-input-container" style="display: none; position:absolute; top: 74px; right: 0; min-width: 300px;">
+                            <div class="search no-input">
+                                <input class="search-input form-control" data-debounce="350" name="search" type="text" placeholder="Search...">
+
+                                <div class="search-indexes"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- End Logo container-->
+
+            <div class="menu-extras">
+                <div class="menu-item">
+                    <!-- Mobile menu toggle-->
+                    <a class="navbar-toggle">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                    <!-- End mobile menu toggle-->
+                </div>
+            </div>
+
+            <div id="navigation">
+                <!-- Navigation Menu-->
+                <ul class="navigation-menu  nav-right">
+                    <li class="has-submenu ">
+                        <a href="https://dataedo.com/product">Product</a>
+                        <ul class="submenu">
+                            <div class="container submenu-container">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <li class="">
+                                            <a href="https://dataedo.com/product">Product Overview</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="https://dataedo.com/sources">Data Connectors</a>
+                                        </li>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <li>
+                                            <span class="submenu-category">Capabilities</span>
+                                        </li>
+                                        <li class="">
+                                            <a href="https://dataedo.com/product/database-documentation-tool">Database Documentation</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="https://dataedo.com/product/entity-relationship-diagram-tool">ER Diagrams</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="https://dataedo.com/product/data-dictionary-tool">Data Dictionary</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="https://dataedo.com/product/business-glossary-tool">Business Glossary</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="https://dataedo.com/product/sensitive-data-discovery-and-classification">Data Discovery and Classification</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="https://dataedo.com/product/data-schema-change-tracking">Database Change Tracking</a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="https://dataedo.com/pricing">Pricing</a>
+                    </li>
+                    <li class="">
+                        <a href="https://dataedo.com/customers">Case studies</a>
+                    </li>
+                    <li class="has-submenu ">
+                        <a href="https://dataedo.com/resources">Resources</a>
+                        <ul class="submenu">
+                            <div class="container submenu-container">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <li class="">
+                                            <a href="https://dataedo.com/blog">Blog</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="https://dataedo.com/library"> Library </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="https://dataedo.com/docs"> Documentation </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="https://dataedo.com/tutorials"> Tutorials </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="https://dataedo.com/samples/"> Samples </a>
+                                        </li>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <li class="">
+                                            <a href="https://dataedo.com/webinars">Webinars</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="https://dataedo.com/kb">Data Knowledge Base </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="https://dataedo.com/videos"> Videos </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="https://dataedo.com/cartoon"> Cartoon </a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="has-submenu ">
+                        <a href="https://dataedo.com/support">Support</a>
+                        <ul class="submenu">
+                            <div class="container submenu-container">
+                                <li class="">
+                                    <a href="mailto:support@dataedo.com?subject=Support request for Dataedo">Contact support</a>
+                                </li>
+                                <li class="">
+                                    <a href="https://support.dataedo.com/">Support forum</a>
+                                </li>
+                                <li class="">
+                                    <a href="https://dataedo.com/docs">Documentation</a>
+                                </li>
+                                <li class="">
+                                    <a href="https://dataedo.com/tutorials">Tutorials</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <div class="buy-menu-btn d-none">
+                        <a href="https://dataedo.com/free-trial" class="btn btn-primary">Free trial</a>
+                    </div>
+                    <li class="d-lg-none">
+                        <a href="javascript:void(0);" id="search-mobile">Search</a>
+                    </li>
+                    <li class="d-lg-none" id="search-mobile-input-container" style="display: none; padding: 10px 20px;">
+                        <div class="search no-input">
+                            <input class="search-input form-control" data-debounce="350" name="search" type="text" placeholder="Search...">
+
+                            <div class="search-indexes"></div>
+                        </div>
+                    </li>
+                </ul><!--end navigation menu-->
+
+            </div><!--end navigation-->
+        </div><!--end container-->
+    </div>
+
+</header><!--end header-->
+<!-- Navbar End -->
+
+<script>
+    $('#search-mobile').click(function () {
+        $('#search-mobile-input-container').toggle();
+    });
+
+    $('#search-desktop').click(function () {
+        $('#search-desktop-input-container').toggle();
+    });
+
+    $(document).mouseup(e => {
+        const searchDesktopContainer = $('#search-desktop-input-container');
+
+        if (!searchDesktopContainer.is(e.target) && !$('#search-desktop').is(e.target) && searchDesktopContainer.has(e.target).length === 0)
+        {
+            searchDesktopContainer.hide();
+        }
+    })
+</script>
+
+<style>
+    .navbar-contact-bar a {
+        color: black;
+    }
+
+    .navbar-contact-bar.nav-light a {
+        color: white;
+    }
+
+    .nav-sticky .navbar-contact-bar a {
+        color: black;
+    }
+</style>
+
+                
+<section class="bg-half d-table w-100  " style="background: #457E9B">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 text-center">
+                <div class="page-next-level" style="color: white">
+                                            <div class="mb-3">
+                            <a style="font-size: 1.1em; color: white" href="https://dataedo.com/kb/databases/mysql">MySQL – Design &amp; Metadata</a>
+                        </div>
+                    
+                    <h2>Sample MySQL databases</h2>
+                    <ul class="list-unstyled mt-4">
+                                                    <li class="list-inline-item user mr-2">
+                                <a href="https://dataedo.com/@marcin-nagly" style="color: white">
+                                                                            <img style="width: 30px; height: 30px; border-radius: 100%; vertical-align: middle;" class="mr-1" alt="Marcin Nagly - Dataedo Team" src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/marcin.jpg">
+                                                                        Marcin Nagly
+                                </a>
+                            </li>
+                        
+                                                    <li class="list-inline-item date mr-2" title="Published: 2018-10-02 14:38:06">
+                                <i class="mdi mdi-calendar-check"></i>
+                                2nd October, 2018
+                            </li>
+                        
+                                            </ul>
+                </div>
+                            </div>
+        </div>
+    </div>
+</section>
+    
+    <div class="position-relative">
+    <div class="shape overflow-hidden text-white">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+        </svg>
+    </div>
+</div>
+
+        
+                        <div class="container pt-3">
+                <div class="row">
+                    <div class="col-12 col-lg-8 offset-lg-2">
+                        Article for:
+                        <span class="dropdown-primary">
+                            <span class="mls" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor: pointer;">
+                                                                    <img class="db-icon16" src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/mysql.png">
+                                                                <b>MySQL</b>
+                                <span style="padding: 4px 4px 4px 0;">▾</span>
+                            </span>
+                            <span class="dropdown-menu">
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+        <a class="dropdown-item" style="display: block; white-space: nowrap;" href="https://dataedo.com/kb/databases/sql-server/sample-databases">
+                                                                                                    <img class="db-icon16" src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/sqlserver.png">
+                                                                                                SQL Server
+                                            </a>
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                    <a class="dropdown-item" style="display: block; white-space: nowrap;" href="https://dataedo.com/kb/databases/oracle/sample-databases">
+                                                                                                    <img class="db-icon16" src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/oracle.png">
+                                                                                                Oracle database
+                                            </a>
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                    <a class="dropdown-item" style="display: block; white-space: nowrap;" href="https://dataedo.com/kb/databases/postgresql/sample-databases">
+                                                                                                    <img class="db-icon16" src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/postgresql.png">
+                                                                                                PostgreSQL
+                                            </a>
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                            <a class="dropdown-item" style="display: block; white-space: nowrap;" href="https://dataedo.com/kb/databases/mariadb/sample-databases">
+                                                                                                    <img class="db-icon16" src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/mariadb.png">
+                                                                                                MariaDB
+                                            </a>
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                    <a class="dropdown-item" style="display: block; white-space: nowrap;" href="https://dataedo.com/kb/databases/db2/sample-databases">
+                                                                                                    <img class="db-icon16" src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/db2.png">
+                                                                                                IBM DB2
+                                            </a>
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                    <a class="dropdown-item" style="display: block; white-space: nowrap;" href="https://dataedo.com/kb/databases/amazon-redshift/sample-databases">
+                                                                                                    <img class="db-icon16" src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/redshift.png">
+                                                                                                Amazon Redshift
+                                            </a>
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                    <a class="dropdown-item" style="display: block; white-space: nowrap;" href="https://dataedo.com/kb/databases/snowflake/sample-databases">
+                                                                                                    <img class="db-icon16" src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/snowflake.png">
+                                                                                                Snowflake
+                                            </a>
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                    <a class="dropdown-item" style="display: block; white-space: nowrap;" href="https://dataedo.com/kb/databases/sybase-ase/sample-databases">
+                                                                                                    <img class="db-icon16" src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/sap.png">
+                                                                                                SAP/Sybase ASE
+                                            </a>
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                        </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+        <section class="section pt-5">
+        <div class="container">
+            <div class="row">
+                                <section class="col-12 col-lg-8 order-0 order-lg-1">
+                                        
+                                        
+                                        
+                                        
+                                        <article class="markdown">
+                        <h2>Official Oracle MySQL samples</h2>
+
+<h3>Sakila</h3>
+
+<p>Sakila is MySQL sample database  - a movie rental database with 16 tables, views, stored procedures, functions and triggers.</p>
+
+<ul>
+<li><a href="http://dev.mysql.com/doc/sakila/en/index.html">Sakila homepage</a></li>
+<li><a href="https://dev.mysql.com/doc/sakila/en/sakila-structure.html">Sakila documentation</a></li>
+<li><a href="https://dev.mysql.com/doc/index-other.html">Sakila download</a></li>
+</ul>
+
+<h3>Employees</h3>
+
+<p>The database contains about 300,000 employee records with 2.8 million salary entries.</p>
+
+<ul>
+<li><a href="https://dev.mysql.com/doc/employee/en/">Employees homepage</a></li>
+<li><a href="https://dev.mysql.com/doc/index-other.html">Employees download</a></li>
+</ul>
+
+<h3>World</h3>
+
+<ul>
+<li><a href="https://dev.mysql.com/doc/world-setup/en/">World homepage</a></li>
+<li><a href="https://dev.mysql.com/doc/index-other.html">World download</a></li>
+</ul>
+
+<h3>World x</h3>
+
+<ul>
+<li><a href="https://dev.mysql.com/doc/index-other.html">World x download</a></li>
+</ul>
+
+<h3>Menagerie</h3>
+
+<ul>
+<li><a href="https://dev.mysql.com/doc/index-other.html">Menagerie download</a></li>
+</ul>
+
+<h2>Other samples</h2>
+
+<h3>Test_DB</h3>
+
+<p>The database contains about 300,000 employee records with 2.8 million salary entries</p>
+
+<ul>
+<li><a href="https://github.com/datacharmer/test_db">Test_DB reference</a></li>
+</ul>
+
+<h3>MySQLTutorial Sample database</h3>
+
+<p>Classicmodels database is a retailer of scale models of classic cars database.</p>
+
+<ul>
+<li><a href="http://www.mysqltutorial.org/mysql-sample-database.aspx">MySQLTutorial Sample DB homepage</a></li>
+</ul>
+
+<h3>SportDB</h3>
+
+<p>Open database schema for sports information.</p>
+
+<ul>
+<li><a href="http://www.sportsdb.org/sd">SportDB homepage</a></li>
+<li><a href="http://www.sportsdb.org/sd/documentation">SportDB reference</a></li>
+<li><a href="http://www.sportsdb.org/sd/samples">SportDB download</a></li>
+</ul>
+
+<h3>Chinook</h3>
+
+<p>The Chinook data model represents a digital media store.</p>
+
+<ul>
+<li><a href="https://github.com/lerocha/chinook-database">Chinook homepage</a></li>
+<li><a href="https://github.com/lerocha/chinook-database/tree/master/ChinookDatabase/DataSources">Chinook download</a></li>
+</ul>
+
+<h3>Northwindextended</h3>
+
+<ul>
+<li><a href="https://code.google.com/archive/p/northwindextended/">Northwindextended homepage</a></li>
+<li><a href="https://code.google.com/archive/p/northwindextended/downloads">Northwindextended download</a></li>
+</ul>
+
+                    </article>
+
+                    
+                                                                <div class="mt-5 ga-cta-bottom" data-cta="" data-cta-uid="IN_DOC_DB_V2"></div>
+                    
+                                        <div class="mt-4">
+                        <div id="disqus-counter" class="disqus-comment-count" data-disqus-url="https://dataedo.com/kb/databases/mysql/sample-databases">0</div>
+<div id="disqus-message">There are no comments. <a href="javascript:void(0)" id="disqus-btn">Click here</a> to write the first comment.</div>
+<div id="disqus_thread"></div>
+
+<noscript>Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+
+<style>
+    #disqus-message { font-style: italic; }
+    #disqus-counter { display: none; }
+    #disqus-btn { cursor: pointer; }
+</style>
+
+<script>
+    $(function () {
+        function openComments() {
+            $('#disqus-message').slideUp(200);
+
+            var disqus_config = function () {
+                this.page.url = 'https://dataedo.com/kb/databases/mysql/sample-databases';
+                this.page.identifier = '/kb/databases/mysql/sample-databases';
+            };
+
+            (function () {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://dataedo.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        }
+
+        function hasAnyComments() {
+            var count = $('#disqus-counter').text() || 0;
+            return +count > 0;
+        }
+
+        function openCommentsIfPresent() {
+            if(hasAnyComments()) {
+                openComments();
+            }
+        }
+
+        $('#disqus-btn').click(openComments);
+        setTimeout(openCommentsIfPresent, 500);
+        setTimeout(openCommentsIfPresent, 1500);
+        setTimeout(openCommentsIfPresent, 5000);
+    });
+</script>
+<script id="dsq-count-scr" src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/count.js"></script>
+                    </div>
+                </section>
+
+                
+                                <aside class="col-12 col-sm-8 col-md-6 col-lg-3 mt-5 mt-lg-0 pt-0 order-2 order-lg-2 mx-auto d-none d-lg-block">
+                    <div class="sidebar sticky-bar">
+                        
+<div class="list-unstyled mb-3 list-group js-scrollspy" id="table-of-contents">
+    </div>
+
+<script>
+    // Make table of contents
+    $(function () {
+        var toc = $('#table-of-contents');
+        var tocCount = 0;
+
+        $.each($('.markdown').find('h2'), function (i, h) {
+            //console.log(($(h).is('h2') ? 'h2' : 'h3') + ': '+ $(h).text());
+            $(h).attr('id', 'toc_' + i);
+            var headerClass = $(h).is('h2') ? '' : 'ml-4';
+            toc.append($('<a class="list-group-item list-group-item-action py-1 border-0 '+ headerClass +'" href="#' + $(h).attr('id') + '">' + $(h).text() + '</a>'));
+            tocCount++;
+        });
+
+        toc.toggle(tocCount > 1);
+    });
+</script>
+
+                        <div data-cta="side"></div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <div data-cta="footer"></div>
+
+        <!-- Footer Start -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                <a href="#" class="logo-footer">
+                    <img src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/dataedo-light.svg" alt="Dataedo" height="26">
+                </a>
+                <p class="mt-4">Document your data and gather tribal knowledge with Data Dictionary &amp; Data Catalog, Business Glossary, and ERDs.</p>
+
+                <div>
+                    <b class="text-white">Contact us</b>
+                    <div class="mt-1" style="font-size: 0.85em;"><a class="text-white" style="opacity: 0.7;" href="mailto:sales@dataedo.com"><i data-feather="mail" class="fea icon-sm mr-1"></i> sales@dataedo.com</a></div>
+                    <div class="mt-1" style="font-size: 0.85em;"><a class="text-white" style="opacity: 0.7;" href="tel:+1 704-387-5078"><i data-feather="phone" class="fea icon-sm mr-1"></i> +1 704-387-5078</a></div>
+                </div>
+
+                <ul class="d-flex list-unstyled social-icon social mb-0 mt-4">
+                    <li class="list-inline-item mr-1">
+                        <a target="_blank" href="https://www.facebook.com/dataedo.tool" class="rounded">
+                            <img src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/facebook.svg" width="22" height="22">
+                        </a>
+                    </li>
+                    <li class="list-inline-item mr-1">
+                        <a target="_blank" href="https://twitter.com/dataedo" class="rounded">
+                            <img src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/twitter.svg" width="22" height="22">
+                        </a>
+                    </li>
+                    <li class="list-inline-item mr-1">
+                        <a target="_blank" href="https://www.linkedin.com/company/dataedo" class="rounded">
+                            <img src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/linkedin.svg" width="22" height="22">
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.youtube.com/channel/UC8Q-n-rZnCDl-Iwj6igmI2g" class="rounded">
+                            <img src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/youtube.svg" width="22" height="22">
+                        </a>
+                    </li>
+                </ul><!--end icon-->
+            </div><!--end col-->
+
+            <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <h4 class="text-light footer-head">Product</h4>
+                <ul class="list-unstyled footer-list mt-4">
+                    <li><a href="https://dataedo.com/product" class="text-foot">Features</a></li>
+                    <li><a href="https://dataedo.com/tutorials" class="text-foot">Tutorials</a></li>
+                    <li><a href="https://dataedo.com/download" class="text-foot">Download</a></li>
+                    <li><a href="https://dataedo.com/support" class="text-foot">Support</a></li>
+                </ul>
+            </div><!--end col-->
+
+            <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <h4 class="text-light footer-head">Company</h4>
+                <ul class="list-unstyled footer-list mt-4">
+                    <li><a href="https://dataedo.com/about-us" class="text-foot">About us</a></li>
+                    <li><a href="https://dataedo.com/customers" class="text-foot">Customers</a></li>
+                    <li><a href="https://dataedo.com/blog" class="text-foot">Blog</a></li>
+                    <li><a href="https://dataedo.com/contact-us" class="text-foot">Contact us</a></li>
+                    <li><a href="https://dataedo.com/careers" class="text-foot">Careers</a></li>
+                    <li><a href="https://dataedo.com/resellers" class="text-foot">Resellers</a></li>
+                </ul>
+            </div><!--end col-->
+
+            <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <h4 class="text-light footer-head">Newsletter</h4>
+                <p class="mt-4">Subscribe to our newsletter and receive the latest tips, cartoons &amp; webinars straight to your inbox.</p>
+                <form action="/subscribe-newsletter" method="get">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="foot-subscribe form-group position-relative">
+                                <label>Your email <span class="text-danger">*</span></label>
+                                <i data-feather="mail" class="fea icon-sm icons"></i>
+                                <input type="email" name="email" id="emailsubscribe" class="form-control pl-5 rounded" placeholder="Email address" required="">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <input type="submit" id="submitsubscribe" class="btn btn-light btn-block" value="Subscribe" style="box-shadow: none">
+                        </div>
+                    </div>
+                </form>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</footer><!--end footer-->
+<footer class="footer footer-bar">
+    <div class="container text-center">
+        <div class="row align-items-center">
+            <div class="col-sm-12 col-md-6">
+                <div class="text-sm-left">
+                    <p class="mb-0">© 2021 Dataedo Sp. z o.o.</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="text-sm-left text-md-right">
+                    <a href="https://dataedo.com/privacy" class="text-foot">Privacy Policy</a>
+                    <a href="https://dataedo.com/license" class="pl-3 text-foot">License Agreement</a>
+                </div>
+            </div>
+        </div><!--end row-->
+    </div><!--end container-->
+</footer><!--end footer-->
+<!-- Footer End -->
+
+<!-- Back to top -->
+<a href="#" class="btn btn-icon btn-soft-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+<!-- Back to top -->
+
+                        <script src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/bootstrap.js"></script>
+        <script src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/jquery.js"></script>
+        <script src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/scrollspy.js"></script>
+
+                <script src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/jquery_002.js"></script>
+        <script src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/magnific.js"></script>
+
+                <script src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/owl_002.js"></script>
+        <script src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/owl.js"></script>
+
+                <script src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/feather.js"></script>
+
+                <script src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/app.js"></script>
+
+                <script src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/cta.js"></script>
+        <script src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/cta_002.js"></script>
+
+                
+                <script type="text/javascript" src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/addthis_widget.js"></script>
+
+                <script type="text/javascript" src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/js.js"></script>
+
+                <script src="Sample%20MySQL%20databases%20-%20MySQL%20-%20Design%20&amp;%20Metadata_files/store.js"></script>
+
+                <script type="text/javascript" src="https://124135-361502-raikfcquaxqncofqfm.stackpathdns.com/asset/js/support/search-with-helprace.js"></script></body></html>

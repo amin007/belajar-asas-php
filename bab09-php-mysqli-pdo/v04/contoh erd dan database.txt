@@ -1,0 +1,9 @@
+https://www.slideshare.net/armanreza161/e-commerce-75285030
+https://cose371.github.io/
+https://www3.ntu.edu.sg/home/ehchua/programming/sql/SampleDatabases.html
+https://www3.ntu.edu.sg/home/ehchua/programming/howto/References.html#mysql
+https://www.w3resource.com/sql/sql-table.php
+https://www.freecodecamp.org/news/sql-example/
+https://www.uky.edu/~dsianita/622/university.html
+https://github.com/updivision/estarter-ecommerce-for-laravel
+https://docs.oracle.com/cd/E35319_01/ACI.10-2/ATGDataWarehouse/html/s0315commerceerd01.html
