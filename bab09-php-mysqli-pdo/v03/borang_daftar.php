@@ -1,3 +1,4 @@
+<form method="POST" action="borang_proses.php">
 <table><tr><td>
 		0	1	0	0		3		0		1		2		0			0	8												0	1			0			0			1
 </td></tr>
@@ -273,32 +274,32 @@
 	<tr><td rowspan="5" valign="top">f)</td>
 			<td colspan="6">Di manakah anda menjalankan pekerjaan pada minggu rujukan? (Bagi Ahli yang bekerja - Boleh pilih lebih dari satu)</td></tr>
 	<tr><td colspan="3">
-			<input id="p1f-1" type="checkbox" name="table[p1f]" value="1">
+			<input id="p1f-1" type="checkbox" name="table[p1f1]" value="1">
 			<label for="p1f-1">1	Di tempat kediaman anda (BDR)</label>
 		</td>
 		<td colspan="3">
-			<input id="p1f-5" type="checkbox" name="table[p1f]" value="5">
+			<input id="p1f-5" type="checkbox" name="table[p1f5]" value="5">
 			<label for="p1f-5">5	Tapak Pembinaan</label>
 		</td></tr>
 	<tr><td colspan="3">
-			<input id="p1f-2" type="checkbox" name="table[p1f]" value="2">
+			<input id="p1f-2" type="checkbox" name="table[p1f2]" value="2">
 			<label for="p1f-2">2	Ruang bekerja di tempat kediaman anda</label>
 		</td><td colspan="3">
-			<input id="p1f-6" type="checkbox" name="table[p1f]" value="6">
+			<input id="p1f-6" type="checkbox" name="table[p1f6]" value="6">
 			<label for="p1f-6">6	Pasar/ Bazar/ Gerai</label>
 		</td></tr>
 	<tr><td colspan="3">
-			<input id="p1f-3" type="checkbox" name="table[p1f]" value="3">
+			<input id="p1f-3" type="checkbox" name="table[p1f3]" value="3">
 			<label for="p1f-3">3	Kilang/ Pejabat/ Bengkel/ Kiosk</label>
 		</td><td colspan="3">
-			<input id="p1f-7" type="checkbox" name="table[p1f]" value="7">
+			<input id="p1f-7" type="checkbox" name="table[p1f7]" value="7">
 			<label for="p1f-7">7	Ladang/ Kebun / Laut (yang berkaitan pertanian)</label>
 		</td></tr>
 	<tr><td colspan="3">
-			<input id="p1f-4" type="checkbox" name="table[p1f]" value="4">
+			<input id="p1f-4" type="checkbox" name="table[p1f4]" value="4">
 			<label for="p1f-4">4	Tempat kediaman majikan</label>
 		</td><td colspan="3">
-			<input id="p1f-8" type="checkbox" name="table[p1f]" value="8">
+			<input id="p1f-8" type="checkbox" name="table[p1f8]" value="8">
 			<label for="p1f-8">8	Tiada tempat yang tetap/ khusus</label>
 		</td></tr>
 	<tr><td width="5%" valign="top" rowspan="4" colspan="2">P2.</td>
@@ -307,19 +308,19 @@
 			(Boleh pilih lebih dari satu)<br>
 		</td></tr>
 	<tr><td colspan="3">
-			<input id="p2-1" type="checkbox" name="table[p2]" value="1"><label for="p2-1">1&#09;Telah mendapat pekerjaan lain</label>
+			<input id="p2-1" type="checkbox" name="table[p2-1]" value="1"><label for="p2-1">1&#09;Telah mendapat pekerjaan lain</label>
 		</td><td colspan="3">
-			<input id="p2-4" type="checkbox" name="table[p2]" value="4"><label for="p2-4">4&#09;Waktu kerja / Waktu Perjalanan</label>
+			<input id="p2-4" type="checkbox" name="table[p2-4]" value="4"><label for="p2-4">4&#09;Waktu kerja / Waktu Perjalanan</label>
 		</td></tr>
 	<tr><td colspan="3">
-			<input id="p2-2" type="checkbox" name="table[p2]" value="2"><label for="p2-2">2&#09;Faedah yang ditawarkan rendah</label>
+			<input id="p2-2" type="checkbox" name="table[p2-2]" value="2"><label for="p2-2">2&#09;Faedah yang ditawarkan rendah</label>
 		</td><td colspan="3">
-			<input id="p2-5" type="checkbox" name="table[p2]" value="5"><label for="p2-5">5&#09;Jarak ke Tempat Kerja</label>
+			<input id="p2-5" type="checkbox" name="table[p2-5]" value="5"><label for="p2-5">5&#09;Jarak ke Tempat Kerja</label>
 		</td></tr>
 	<tr><td colspan="3">
-			<input id="p2-3" type="checkbox" name="table[p2]" value="3"><label for="p2-3">3&#09;Kadar gaji tidak setaraf dengan sijil yang dimiliki</label>
+			<input id="p2-3" type="checkbox" name="table[p2-3]" value="3"><label for="p2-3">3&#09;Kadar gaji tidak setaraf dengan sijil yang dimiliki</label>
 		</td><td colspan="3">
-			<input id="p2-6" type="checkbox" name="table[p2]" value="6"><label for="p2-6">6&#09;Budaya dan Fleksibiliti Tempat Kerja</label>
+			<input id="p2-6" type="checkbox" name="table[p2-6]" value="6"><label for="p2-6">6&#09;Budaya dan Fleksibiliti Tempat Kerja</label>
 		</td></tr>
 	<tr><td width="5%" valign="top" rowspan="5" colspan="2">P3.</td>
 		<td colspan="6">Apakah kesan/ impak penularan COVID-19 (PKP 2.0) kepada anda? (Boleh pilih lebih dari satu)
@@ -361,3 +362,6 @@
 	</table>
 </td></tr>
 </table>
+
+<input type="submit" value="hantar">
+</form>
