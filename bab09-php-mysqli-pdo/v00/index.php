@@ -53,7 +53,7 @@ $carian[] = array(
 	'atau' => 'WHERE',
 	'medan' => 'ALAMAT',
 	'fix' => '%like%',
-	'apa' => '',
+	'apa' => '37%jawa%muar',
 	//'akhir' => '',
 );
 /*$carian[] = array(
