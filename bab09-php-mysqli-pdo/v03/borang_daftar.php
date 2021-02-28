@@ -178,14 +178,12 @@
 	Bahagian C (Kajian kesan COVID-19/ PKP 2.0) - PERLU DIISI OLEH AHLI YANG BERUMUR 15 TAHUN KEATAS
 </td></tr>
 <tr><td>
-	<table width="100%">
-	<tr><td width="5%" valign="top">P1.</td>
-	<td>
-		<table border="1">
-		<tr><td colspan="10">
+	<table border=="1" width="100%">
+	<tr><td width="5%" valign="top" rowspan="18">P1.</td>
+	<td colspan="10">
 		Jika anda bekerja/ pernah bekerja, sila nyatakan maklumat pekerjaan dalam tempoh berikut :
-		</td></tr>
-		<tr><td>a)</td><td colspan="6">
+	</td></tr>
+	<tr><td>a)</td><td colspan="6">
 			<table>
 			<tr><td colspan="5">Tarikh terakhir pekerjaan anda? (Jika anda telah berhenti kerja)</td></tr>
 			<tr><td>[][]</td><td rowspan="2">-</td><td>[][]</td><td rowspan="2">-</td><td>[][][][]</td></tr>
@@ -200,90 +198,123 @@
 		<td>v) Pekerjaan</td><td>vi) Industri</td>
 		</tr>
 		<tr><td colspan="3">Sebelum PKP 2.0</td><td colspan="3">Semasa</td></tr>
-		<tr><td>1	Majikan</td><td>&nbsp;</td><td>&nbsp;</td><td>1	Majikan</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-		<tr><td>2	Pekerja Kerajaan</td><td>&nbsp;</td><td>&nbsp;</td><td>2	Pekerja Kerajaan</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-		<tr><td>3	Pekerja Swasta</td><td>&nbsp;</td><td>&nbsp;</td><td>3	Pekerja Swasta</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-		<tr><td>4	Bekerja Sendiri</td><td>&nbsp;</td><td>&nbsp;</td><td>4	Bekerja Sendiri</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-		<tr><td>5	Pekerja Keluarga Tanpa Gaji</td><td>&nbsp;</td><td>&nbsp;</td><td>5	Pekerja Keluarga Tanpa Gaji</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-		<tr><td>6	Perantis atau Pelatih Berbayar</td><td>&nbsp;</td><td>&nbsp;</td><td>6	Perantis atau Pelatih Berbayar</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+		<tr><td>
+				<input type="radio" id="i1" name="table[p1b(i)]" value="1">
+				<label for="i1">1	Majikan</label><br>
+			</td><td>&nbsp;</td><td>&nbsp;</td>
+			<td>
+				<input type="radio" id="iv1" name="table[p1b(iv)]" value="1">
+				<label for="iv1">1	Majikan</label><br>
+			</td>
+			<td>&nbsp;</td><td>&nbsp;</td></tr>
+		<tr><td><input type="radio" id="i2" name="table[p1b(i)]" value="2">
+				<label for="i2">2	Pekerja Kerajaan</label><br>
+			</td><td>&nbsp;</td><td>&nbsp;</td>
+			<td><input type="radio" id="iv2" name="table[p1b(iv)]" value="2">
+				<label for="iv2">2	Pekerja Kerajaan</label><br>
+			</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+		<tr><td><input type="radio" id="i3" name="table[p1b(i)]" value="3">
+				<label for="i3">3	Pekerja Swasta</label><br>
+			</td><td>&nbsp;</td><td>&nbsp;</td>
+			<td><input type="radio" id="iv3" name="table[p1b(iv)]" value="3">
+				<label for="iv3">3	Pekerja Swasta</label><br>
+			</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+		<tr><td><input type="radio" id="i4" name="table[p1b(i)]" value="4">
+				<label for="i4">4	Bekerja Sendiri</label><br>
+			</td><td>&nbsp;</td><td>&nbsp;</td>
+			<td><input type="radio" id="iv4" name="table[p1b(iv)]" value="4">
+				<label for="iv4">4	Bekerja Sendiri</label><br>
+				</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+		<tr><td><input type="radio" id="i5" name="table[p1b(i)]" value="5">
+				<label for="i5">5	Pekerja Keluarga Tanpa Gaji</label><br>
+			</td><td>&nbsp;</td><td>&nbsp;</td>
+			<td><input type="radio" id="iv5" name="table[p1b(iv)]" value="5">
+				<label for="iv5">5	Pekerja Keluarga Tanpa Gaji</label><br>
+			</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+		<tr><td><input type="radio" id="i6" name="table[p1b(i)]" value="6">
+				<label for="i6">6	Perantis atau Pelatih Berbayar</label><br>
+			</td><td>&nbsp;</td><td>&nbsp;</td>
+			<td width="250"><input type="radio" id="iv6" name="table[p1b(iv)]" value="6">&nbsp;<label
+			for="iv6">6&nbsp;Perantis&nbsp;atau&nbsp;Pelatih&nbsp;Berbayar</label><br>
+			</td><td>&nbsp;</td><td>&nbsp;</td></tr>
 		<tr><td>c)</td><td>Bilangan jam bekerja sehari</td><td colspan="2">(i)		0		8</td><td>&nbsp;</td><td colspan="2">(ii)</td></r>
 		<tr><td>d)</td><td>Adakah pekerjaan tersebut sesuai<br>dengan siji/kemahiran yang dimiliki ?</td>
-			<td colspan="2">(i)	1 Ya	2 Tidak</td><td>&nbsp;</td><td colspan="2">(ii)	1 Ya				2 Tidak</td></tr>
+			<td colspan="2">(i)
+				<input id="p1ci-1" type="radio" name="table[p1ci]" value="1">
+				<label for="p1ci-1">1	Ya</label>
+				<input id="p1ci-2" type="radio" name="table[p1ci]" value="2">
+				<label for="p1ci-2">2 Tidak</label>
+			</td><td>&nbsp;</td>
+			<td colspan="2">(ii)
+				<input id="p1civ-1" type="radio" name="table[p1civ]" value="1">
+				<label for="p1civ-1">1	Ya</label>
+				<input id="p1civ-2" type="radio" name="table[p1civ]" value="2">
+				<label for="p1civ-2">2 Tidak</label>
+			</td></tr>
 		<tr><td>e)</td><td>Gaji/ Upah/ Faedah (RM)</td><td colspan="2">(i)	2000</td><td>&nbsp;</td><td colspan="2">(ii)</td></tr>
-		<tr><td>f)</td><td colspan="6">Di manakah anda menjalankan pekerjaan pada minggu rujukan ? (Bagi Ahli yang bekerja - Boleh pilih lebih dari satu)</td></tr>
-		<tr><td>&nbsp;</td><td colspan="3">1	Di tempat kediaman anda (BDR)</td><td colspan="3">5	Tapak Pembinaan</td></tr>
-		<tr><td>&nbsp;</td><td colspan="3">2	Ruang bekerja di tempat kediaman anda</td><td colspan="3">6	Pasar/ Bazar/ Gerai</td></tr>
-		<tr><td>&nbsp;</td><td colspan="3">3	Kilang/ Pejabat/ Bengkel/ Kiosk</td><td colspan="3">7	Ladang/ Kebun / Laut (yang berkaitan pertanian)</td></tr>
-		<tr><td>&nbsp;</td><td colspan="3">4	Tempat kediaman majikan</td><td colspan="3">8	Tiada tempat yang tetap/ khusus</td></tr>
-		</table>
-	</td></tr>
-	</table>
-	</td></tr>
-	<tr><td>
-		<table width="100%">
-		<tr><td width="5%" valign="top">P2.</td>
-		<td>
+		<tr><td rowspan="5" valign="top">f)</td>
+			<td colspan="6">Di manakah anda menjalankan pekerjaan pada minggu rujukan ? (Bagi Ahli yang bekerja - Boleh pilih lebih dari satu)</td></tr>
+		<tr>
+			<td colspan="3">
+				<input id="p1f-1" type="checkbox" name="table[p1f]" value="1">
+				<label for="p1f-1">1	Di tempat kediaman anda (BDR)</label>
+			</td>
+			<td colspan="3">
+				<input id="p1f-5" type="checkbox" name="table[p1f]" value="1">
+				<label for="p1f-5">5	Tapak Pembinaan</label>
+			</td></tr>
+		<tr><td colspan="3">2	Ruang bekerja di tempat kediaman anda</td><td colspan="3">6	Pasar/ Bazar/ Gerai</td></tr>
+		<tr><td colspan="3">3	Kilang/ Pejabat/ Bengkel/ Kiosk</td><td colspan="3">7	Ladang/ Kebun / Laut (yang berkaitan pertanian)</td></tr>
+	<tr><td colspan="3">4	Tempat kediaman majikan</td><td colspan="3">8	Tiada tempat yang tetap/ khusus</td></tr>
+
+	<tr><td width="5%" valign="top" rowspan="4">P2.</td>
+		<td rowspan="4">&nbsp;</td>
+		<td colspan="6">
 			Pernahkah anda menolak tawaran kerja sebelum ini?  Jika Ya, sila nyatakan sebab anda berbuat demikian.<br>
 			(Boleh pilih lebih dari satu)<br>
-			<table border="1">
-			<tr><td>1	Telah mendapat pekerjaan lain</td><td>4	Waktu kerja / Waktu Perjalanan</td></tr>
-			<tr><td>2	Faedah yang ditawarkan rendah</td><td>5	Jarak ke Tempat Kerja</td></tr>
-			<tr><td>3	Kadar gaji tidak setaraf dengan sijil yang dimiliki</td><td>6	Budaya dan Fleksibiliti Tempat Kerja</td></tr>
-			</table>
-		</td><tr>
-		</table>
-	</td></tr>
-	<tr><td>
-		<table width="100%">
-		<tr><td width="5%" valign="top">P3.</td>
-		<td>
-			Apakah kesan/ impak penularan COVID-19 (PKP 2.0) kepada anda? (Boleh pilih lebih dari satu)
-			<table border="1">
-			<tr><td>1	Kehilangan Pekerjaan</td><td>5	Peningkatan Kos Perbelanjaan Kesihatan</td></tr>
-			<tr><td>2	Hilang Sumber Pendapatan</td><td>6	Kurang Aktiviti Sukan dan Riadah</td></tr>
-			<tr><td>3	Tutup Perniagaan/ Premis</td><td>7	Kesukaran Pergerakan Aktivi Harian</td></tr>
-			<tr><td>4	Peningkatan Kos Perbelanjaan Makanan</td><td>8	Kurang Aktiviti Percutian/ Pelancongan</td></tr>
-			</table>
 		</td></tr>
-		</table>
-	</td></tr>
-	<tr><td>
-		<table width="100%">
-		<tr><td width="5%" valign="top">P4.</td>
-		<td>
-			Adakah anda menerima sebarang insentif/ bantuan daripada kerajaan?
-			<li>1	Ya</li>
-			<li>2 Tidak</li>
+	<tr><td colspan="3">1	Telah mendapat pekerjaan lain</td><td colspan="3">4	Waktu kerja / Waktu Perjalanan</td></tr>
+	<tr><td colspan="3">2	Faedah yang ditawarkan rendah</td><td colspan="3">5	Jarak ke Tempat Kerja</td></tr>
+	<tr><td colspan="3">3	Kadar gaji tidak setaraf dengan sijil yang dimiliki</td><td colspan="3">6	Budaya dan Fleksibiliti Tempat Kerja</td></tr>
+
+	<tr><td width="5%" valign="top" rowspan="5">P3.</td>
+		<td rowspan="5">&nbsp;</td>
+		<td colspan="6">Apakah kesan/ impak penularan COVID-19 (PKP 2.0) kepada anda? (Boleh pilih lebih dari satu)
 		</td></tr>
-		</table>
-	</td></tr>
-	<tr><td>
-		<table width="100%">
-		<tr><td width="5%" valign="top">P5.</td>
-		<td>
-		Jika Ya, sila nyatakan pilihan berikut (Boleh pilih lebih daripada satu)
-			<table border="1">
-			<tr><td>1	Bantuan Sara Hidup (BSH)</td><td>6	Penangguhan bayaran pinjaman PTPTN / PTPK</td></tr>
-			<tr><td>2	Bantuan Prihatin Nasional (BPN) /e-hailing/ pemandu teksi</td><td>7	Geran Subsidi Upah</td></tr>
-			<tr><td>3	Bantuan Khas Penjawat Awam/Pesara</td><td>8	Pengeluaran Akaun i-Sinar /i-Lestari</td></tr>
-			<tr><td>4	Bantuan Orang Kelainan Upaya (OKU)</td><td>9	Bantuan Khas PERMAI 2021</td></tr>
-			<tr><td>5	Moratorium pinjaman
-			</table>
+	<tr><td colspan="3">1	Kehilangan Pekerjaan</td><td colspan="3">5	Peningkatan Kos Perbelanjaan Kesihatan</td></tr>
+	<tr><td colspan="3">2	Hilang Sumber Pendapatan</td><td colspan="3">6	Kurang Aktiviti Sukan dan Riadah</td></tr>
+	<tr><td colspan="3">3	Tutup Perniagaan/ Premis</td><td colspan="3">7	Kesukaran Pergerakan Aktivi Harian</td></tr>
+	<tr><td colspan="3">4	Peningkatan Kos Perbelanjaan Makanan</td><td colspan="3">8	Kurang Aktiviti Percutian/ Pelancongan</td></tr>
+
+	<tr><td width="5%" valign="top">P4.</td>
+		<td>&nbsp;</td>
+		<td colspan="6">
+			Adakah anda menerima sebarang insentif/ bantuan daripada kerajaan?<br>
+			<input id="p4-1" type="radio" name="table[p4]" value="1">
+			<label for="p4-1">1	Ya</label><br>
+			<input id="p4-2" type="radio" name="table[p4]" value="2">
+			<label for="p4-2">2 Tidak</label><br>
 		</td></tr>
-		</table>
-	</td></tr>
-	<tr><td>
-		<table width="100%">
-		<tr><td width="5%" valign="top">PKP 2.0:</td>
-		<td>
-		<li>13 Januari - 4 Februari 2021 bagi seluruh negeri Pulau Pinang, Selangor, Wilayah Persekutuan (Kuala Lumpur, Putrajaya dan Labuan), Melaka, Johor dan Sabah.</li>
-		<li>16 Januari - 29 Januari 2021 bagi daerah Sibu, Selangau dan Kanowit, Sarawak.</li>
-		<li>16 Januari - 4 Februari 2021 bagi negeri Kelantan.</li>
-		<li>19 Januari - 1 Februari 2021 bagi daerah Seremban dan Port Dickson, Negeri Sembilan.</li>
-		<li>22 Januari - 4 Februari 2021 bagi seluruh negeri Perlis, Kedah, Terengganu, Perak, Pahang, Kelantan dan Negeri Sembilan.</li>
-		<li>5 Februari - 18 Februari 2021 bagi seluruh negeri kecuali Sarawak.</li>
-		</li>
+
+	<tr><td width="5%" valign="top" rowspan="6">P5.</td>
+		<td rowspan="6">&nbsp;</td>
+		<td colspan="6">Jika Ya, sila nyatakan pilihan berikut (Boleh pilih lebih daripada satu)</td></tr>
+	<tr><td colspan="3">1	Bantuan Sara Hidup (BSH)</td><td colspan="3">6	Penangguhan bayaran pinjaman PTPTN / PTPK</td></tr>
+	<tr><td colspan="3">2	Bantuan Prihatin Nasional (BPN) /e-hailing/ pemandu teksi</td><td colspan="3">7	Geran Subsidi Upah</td></tr>
+	<tr><td colspan="3">3	Bantuan Khas Penjawat Awam/Pesara</td><td colspan="3">8	Pengeluaran Akaun i-Sinar /i-Lestari</td></tr>
+	<tr><td colspan="3">4	Bantuan Orang Kelainan Upaya (OKU)</td><td colspan="3">9	Bantuan Khas PERMAI 2021</td></tr>
+	<tr><td colspan="3">5	Moratorium pinjaman</td><td colspan="3">&nbsp;</td></tr>
+
+	<tr><td width="5%" valign="top" colspan="2">PKP 2.0:</td>
+		<td colspan="6">
+			<li>13 Januari - 4 Februari 2021 bagi seluruh negeri Pulau Pinang, Selangor, Wilayah Persekutuan (Kuala Lumpur, Putrajaya dan Labuan), Melaka, Johor dan Sabah.</li>
+			<li>16 Januari - 29 Januari 2021 bagi daerah Sibu, Selangau dan Kanowit, Sarawak.</li>
+			<li>16 Januari - 4 Februari 2021 bagi negeri Kelantan.</li>
+			<li>19 Januari - 1 Februari 2021 bagi daerah Seremban dan Port Dickson, Negeri Sembilan.</li>
+			<li>22 Januari - 4 Februari 2021 bagi seluruh negeri Perlis, Kedah, Terengganu, Perak, Pahang, Kelantan dan Negeri Sembilan.</li>
+			<li>5 Februari - 18 Februari 2021 bagi seluruh negeri kecuali Sarawak.</li>
+			</li>
 		</td></tr>
-		</table>
+	</table>
 </td></tr>
 </table>
