@@ -10,9 +10,12 @@
 	<br>A1.	Nama :		{nama}:
 	<br>A2.	No Kad Pengenalan :
 	<br>A3.	No telefon:
-	<br>A4.	Umur :					4		9			015 - 200
-	<br>A5.	Jantina :		1	Lelaki
-						2	Perempuan
+	<br>A4.	Umur :	[][][]	015 - 200
+	<br>A5.	Jantina :
+		<ul>
+		<li>1	Lelaki</li>
+		<li>2	Perempuan</li>
+		</ul>
 	</td width="50%">
 	<td>
 	<ul>
@@ -38,25 +41,29 @@
 	Bahagian B (Pekerjaan Semasa) - PERLU DIISI OLEH AHLI YANG BERUMUR 15 TAHUN KEATAS
 </td></tr>
 <tr><td width="50%">
-	S1.	Adakah anda bekerja sekurang-kurangnya
-		SEJAM (Minggu Rujukan) kerana upah atau
+	S1.	Adakah anda bekerja sekurang-kurangnya<br>
+		SEJAM (Minggu Rujukan) kerana upah atau<br>
 		keuntungan keluarga? (Termasuk yang bekerja sendiri).
+		<ul>
 		<li>1	Ya	- Terus ke S3 dan seterusnya</li>
 		<li>2 Tidak</li>
-
-	S2.	Walaupun anda tidak bekerja pada minggu rujukan,
-		adakah anda mempunyai apa-apa pekerjaan, kerja ladang,
-		perusahaan atau perusahaan-perusahaan keluarga lain
+		</ul>
+	S2.	Walaupun anda tidak bekerja pada minggu rujukan,<br>
+		adakah anda mempunyai apa-apa pekerjaan, kerja ladang,<br>
+		perusahaan atau perusahaan-perusahaan keluarga lain<br>
 		yang anda akan kerjakan kembali?
+		<ul>
 		<li>1	Ya	- Terus ke S6 dan seterusnya</li>
 		<li>2 Tidak -	Terus ke S7 dan seterusnya</li>
+		</ul>
 
-	S3.	Berapa jam anda bekerja pada minggu rujukan
-		(termasuk kerja-kerja tambahan, pekerjaan kedua, pekerjaan
-		ketiga dan lain-lain)?
-							Jika 30 jam atau lebih, terus ke S14
+	S3.	Berapa jam anda bekerja pada minggu rujukan<br>
+		(termasuk kerja-kerja tambahan, pekerjaan kedua, pekerjaan<br>
+		ketiga dan lain-lain)?<br>
+		[][][]Jika 30 jam atau lebih, terus ke S14<br><br>
 
-	S4.	Mengapa anda bekerja kurang dari 30 jam	pada minggu rujukan?
+	S4.	Mengapa anda bekerja kurang dari 30 jam	pada minggu rujukan?<br>
+		<ul>
 		<li>1	Kerja tidak mencukupi</li>
 		<li>2	Memang keadaan kerja begitu</li>
 		<li>3	Bersara</li>
@@ -66,14 +73,19 @@
 		<li>7	Sakit/cedera</li>
 		<li>8	Keadaan cuaca</li>
 		<li>9	Perintah Kawalan Pergerakan (PKP) 2.0</li>
+		</ul>
 
-	S5.	Jika bekerja kurang dari 30 jam pada minggu rujukan,
-		adakah anda BOLEH dan SANGGUP menerima tambahan
-		bilangan jam bekerja?
+	S5.	Jika bekerja kurang dari 30 jam pada minggu rujukan,<br>
+		adakah anda BOLEH dan SANGGUP menerima tambahan<br>
+		bilangan jam bekerja?<br>
+		<ul>
 		<li>1	Ya</li>
 		<li>2	Tidak</li>
-	S6.	Mengapa anda tidak bekerja pada minggu rujukan?
-		1	Sakit/cedera</li>
+		</ul>
+
+	S6.	Mengapa anda tidak bekerja pada minggu rujukan?<br>
+		<ul>
+		<li>1	Sakit/cedera</li>
 		<li>2	Keadaan cuaca</li>
 		<li>3	Cuti</li>
 		<li>4	Henti kerja sementara (pekerja bergaji)</li>
@@ -81,25 +93,33 @@
 		<li>6	Perintah Kawalan Pergerakan (PKP) 2.0</li>
 		<li>7	Henti kerja sementara (pekerja tidak bergaji)</li>
 		<li>8	Kehilangan Pekerjaan ( PKP 2.0)</li>
+		</ul>
 
 		S12.	Berapa lamakah anda sudah mencari kerja?
+		<ul>
 		<li>1	Kurang dari 3 bulan</li>
 		<li>2	3 bulan–kurang dari 6 bulan</li>
 		<li>3	6 bulan–kurang dari 1 tahun</li>
 		<li>4	1–3 tahun</li>
 		<li>5	Lebih daripada 3 tahun</li>
-		<li>
+		</ul>
+
 	</td>
 	<td width="50%">
 		S7.	Adakah anda mencari kerja pada minggu rujukan?
+		<ul>
 		<li>1	Ya	Terus ke S11 dan seterusnya</li>
 		<li>2	Tidak</li>
+		</ul>
 
 		S7a.	Adakah anda mencari kerja dalam masa 3 bulan yang lepas?
+		<ul>
 		<li>1	Ya</li>
 		<li>2	Tidak</li>
+		</ul>
 
 		S8.	Kenapa anda tidak mencari kerja pada minggu rujukan?</li>
+		<ul>
 		<li>01	Bersekolah/masih belajar/program latihan</li>
 		<li>02	Kerja rumah/tanggungjawab keluarga/komuniti</li>
 		<li>03	Percaya tiada kerja/tiada kerja yang sesuai</li>
@@ -114,24 +134,35 @@
 		<li>11	Tiada kelayakan/kurang kemahiran</li>
 		<li>12	Bersara</li>
 		<li>13	Lanjut usia</li>
+		</ul>
 
-		S9.	Adakah anda ingin bekerja jika peluang pekerjaan atau perniagaan tersedia?
+		S9.	Adakah anda ingin bekerja jika peluang pekerjaan<br>
+			atau perniagaan tersedia?
+		<ul>
 		<li>1	Ya</li>
 		<li>2	Tidak</li>
+		</ul>
 
-		S10.	Jika peluang pekerjaan atau perniagaan tersedia,adakah anda...
+		S10.	Jika peluang pekerjaan atau perniagaan tersedia,<br>
+			adakah anda...
+		<ul>
 		<li>1	Boleh mula bekerja dalam tempoh 7 hari yang lalu</li>
 		<li>2	Boleh mula bekerja dalam tempoh dua minggu akan datang</li>
 		<li>3	Belum bersedia untuk bekerja</li>
+		</ul>
 
-		S11.	Apakah langkah-langkah yang telah anda ambil untuk mendapatkan kerja pada minggu rujukan?
+		S11.	Apakah langkah-langkah yang telah anda ambil untuk<br>
+			mendapatkan kerja pada minggu rujukan?<br>
+		<ul>
 		<li>1	Jabatan Tenaga Kerja/Agensi Pekerjaan</li>
 		<li>2	Menjawab iklan/mengiklan</li>
 		<li>3	Menghantar surat/emel permohonan</li>
 		<li>4	Beritahu sahabat/saudara mara</li>
 		<li>5	Menghadiri karnival kerjaya/keusahawanan</li>
+		</ul>
 
 		S13.	Apakah anda buat pada minggu rujukan?
+		<ul>
 		<li>1	Masih belajar</li>
 		<li>2	Baru berhenti sekolah</li>
 		<li>3	Kerja rumah/tanggungjawab keluarga/komuniti</li>
@@ -140,7 +171,7 @@
 		<li>6	Henti kerja sementara</li>
 		<li>7	Bersara</li>
 		<li>8	Lanjut usia</li>
-
+		</ul>
 	</td>
 </tr>
 <tr><td>
@@ -163,12 +194,12 @@
 		</td></tr>
 		<tr>
 		<td rowspan="8" valign="top">b)</td>
-		<td>i) Taraf pekerjaan (sebelum PKP 2.0)</td>
+		<td>i) Taraf pekerjaan</td>
 		<td>ii) Pekerjaan</td><td>iii) Industri</td>
-		<td>iv) Taraf pekerjaan (semasa)</td>
+		<td>iv) Taraf pekerjaan</td>
 		<td>v) Pekerjaan</td><td>vi) Industri</td>
 		</tr>
-		<tr><td>&nbsp;</td><td colspan="2">Sebelum PKP 2.0</td><td>&nbsp;</td><td colspan="2">Semasa</td></tr>
+		<tr><td colspan="3">Sebelum PKP 2.0</td><td colspan="3">Semasa</td></tr>
 		<tr><td>1	Majikan</td><td>&nbsp;</td><td>&nbsp;</td><td>1	Majikan</td><td>&nbsp;</td><td>&nbsp;</td></tr>
 		<tr><td>2	Pekerja Kerajaan</td><td>&nbsp;</td><td>&nbsp;</td><td>2	Pekerja Kerajaan</td><td>&nbsp;</td><td>&nbsp;</td></tr>
 		<tr><td>3	Pekerja Swasta</td><td>&nbsp;</td><td>&nbsp;</td><td>3	Pekerja Swasta</td><td>&nbsp;</td><td>&nbsp;</td></tr>
