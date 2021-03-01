@@ -14,26 +14,37 @@
 	<br>A4.	Umur :	[][][]	015 - 200
 	<br>A5.	Jantina :
 		<ul>
-		<li>1	Lelaki</li>
-		<li>2	Perempuan</li>
+		<li><input id="a5-1" type="radio" name="table[a5]" value="1">
+			<label for="a5-1">1	Lelaki</label></li>
+		<li><input id="a5-2" type="radio" name="table[a5]" value="2">
+			<label for="a5-2">2	Perempuan</label></li>
 		</ul>
 	</td width="50%">
 	<td>
 	<ul>
 	<li>A6.	Kumpulan etnik</li>
-	<li>1	Bumiputera</li>
-	<li>2 	Cina</li>
-	<li>3	India</li>
-	<li>4	Lain-Lain</li>
-	<li>5	Bukan Warganegara</li>
+	<li><input id="a6-1" type="radio" name="table[a6]" value="1">
+		<label for="a6-1">1	Bumiputera</label></li>
+	<li><input id="a6-2" type="radio" name="table[a6]" value="2">
+		<label for="a6-2">2 	Cina</label></li>
+	<li><input id="a6-3" type="radio" name="table[a6]" value="3">
+		<label for="a6-3">3	India</label></li>
+	<li><input id="a6-4" type="radio" name="table[a6]" value="4">
+		<label for="a6-4">4	Lain-Lain</label></li>
+	<li><input id="a6-5" type="radio" name="table[a6]" value="5">
+		<label for="a6-5">5	Bukan Warganegara</label></li>
 	</ul>
 
 	<ul>
 	<li>A7.	Taraf Pendidikan :</li>
-	<li>1	Rendah</li>
-	<li>2	Menengah</li>
-	<li>3	Tertiari</li>
-	<li>4	Tiada pendidikan rasmi</li>
+	<li><input id="a7-1" type="radio" name="table[a7]" value="1">
+		<label for="a7-1">1	Rendah</label></li>
+	<li><input id="a7-2" type="radio" name="table[a7]" value="1">
+		<label for="a7-2">2	Menengah</label></li>
+	<li><input id="a7-3" type="radio" name="table[a7]" value="1">
+		<label for="a7-3">3	Tertiari</label></li>
+	<li><input id="a7-4" type="radio" name="table[a7]" value="1">
+		<label for="a7-4">4	Tiada pendidikan rasmi</label></li>
 	</ul>
 	</td></tr>
 	<table>
