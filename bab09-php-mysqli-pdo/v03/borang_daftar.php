@@ -74,8 +74,8 @@
 </td></tr>
 <tr><td>
 	<table>
-<tr><td width="50%">
-	S1.	Adakah anda bekerja sekurang-kurangnya<br>
+	<tr><td width="50%">
+		S1.	Adakah anda bekerja sekurang-kurangnya<br>
 		SEJAM (Minggu Rujukan) kerana upah atau<br>
 		keuntungan keluarga? (Termasuk yang bekerja sendiri).
 		<ul>
@@ -84,7 +84,7 @@
 		<li><input id="s01-2" type="radio" name="table[s01]" value="2">
 			<label for="s01-2">2 Tidak</label></li>
 		</ul>
-	S2.	Walaupun anda tidak bekerja pada minggu rujukan,<br>
+		S2.	Walaupun anda tidak bekerja pada minggu rujukan,<br>
 		adakah anda mempunyai apa-apa pekerjaan, kerja ladang,<br>
 		perusahaan atau perusahaan-perusahaan keluarga lain<br>
 		yang anda akan kerjakan kembali?
@@ -92,15 +92,15 @@
 		<li><input id="s02-1" type="radio" name="table[s02]" value="1">
 			<label for="s02-1">1-Ya</label> => Terus ke S6 dan seterusnya</li>
 		<li><input id="s02-2" type="radio" name="table[s02]" value="2">
-			<label for="s02-2">2-Tidak</label>Terus ke S7 dan seterusnya</li>
+			<label for="s02-2">2-Tidak</label> => Terus ke S7 dan seterusnya</li>
 		</ul>
 
-	S3.	Berapa jam anda bekerja pada minggu rujukan<br>
+		S3.	Berapa jam anda bekerja pada minggu rujukan<br>
 		(termasuk kerja-kerja tambahan, pekerjaan kedua, pekerjaan<br>
 		ketiga dan lain-lain)?<br>
-		[][][]Jika 30 jam atau lebih, terus ke P1<br><br>
+		<input type="text" name="table[s3]">Jika 30 jam atau lebih, terus ke P1<br><br>
 
-	S4.	Mengapa anda bekerja kurang dari 30 jam	pada minggu rujukan?<br>
+		S4.	Mengapa anda bekerja kurang dari 30 jam	pada minggu rujukan?<br>
 		<ul>
 		<li><input id="s04-4" type="radio" name="table[s04]" value="1">
 			<label for="s2-1">1-Kerja tidak mencukupi</label></li>
@@ -114,17 +114,17 @@
 			<label for="s04-5">5-Kerja rumah/tanggungjawab keluarga/komuniti</label>
 			<br>=> terus ke P1 dan selanjutnya</li>
 		<li><input id="s04-6" type="radio" name="table[s04]" value="6">
-			<label for="s04-6">6	Cuti</label> => terus ke P1 dan selanjutnya</li>
+			<label for="s04-6">6-Cuti</label> => terus ke P1 dan selanjutnya</li>
 		<li><input id="s04-7" type="radio" name="table[s04]" value="7">
-			<label for="s04-7">7	Sakit/cedera</label> => terus ke P1 dan selanjutnya</li>
+			<label for="s04-7">7-Sakit/cedera</label> => terus ke P1 dan selanjutnya</li>
 		<li><input id="s04-8" type="radio" name="table[s04]" value="8">
-			<label for="s04-8">8	Keadaan cuaca</label> => terus ke P1 dan selanjutnya</li>
+			<label for="s04-8">8-Keadaan cuaca</label> => terus ke P1 dan selanjutnya</li>
 		<li><input id="s04-9" type="radio" name="table[s04]" value="9">
-			<label for="s04-9">9	Perintah Kawalan Pergerakan (PKP) 2.0</label>
+			<label for="s04-9">9-Perintah Kawalan Pergerakan (PKP) 2.0</label>
 			<br>=> terus ke P1 dan selanjutnya</li>
 		</ul>
 
-	S5.	Jika bekerja kurang dari 30 jam pada minggu rujukan,<br>
+		S5. Jika bekerja kurang dari 30 jam pada minggu rujukan,<br>
 		adakah anda BOLEH dan SANGGUP menerima tambahan<br>
 		bilangan jam bekerja?<br>
 		<ul>
@@ -135,7 +135,7 @@
 		<li>=> Terus ke P1 dan seterusnya</li>
 		</ul>
 
-	S6.	Mengapa anda tidak bekerja pada minggu rujukan?<br>
+		S6.	Mengapa anda tidak bekerja pada minggu rujukan?<br>
 		<ul>
 		<li><input id="s06-1" type="radio" name="table[s06]" value="1">
 			<label for="s06-1">1-Sakit/cedera</label></li>
@@ -296,65 +296,44 @@
 	<hr>
 </td></tr>
 <tr><td>
-	<table border=="1" width="100%">
-	<tr><td width="5%" valign="top" rowspan="18">P1.</td>
+	<table border="1" width="100%">
+	<tr><td width="5%" valign="top" rowspan="13">P1.</td>
 	<td colspan="7">
 		Jika anda bekerja/ pernah bekerja, sila nyatakan maklumat pekerjaan dalam tempoh berikut :
 	</td></tr>
 	<tr><td>a)</td><td colspan="6">
 			<table>
 			<tr><td colspan="5">Tarikh terakhir pekerjaan anda? (Jika anda telah berhenti kerja)</td></tr>
-			<tr><td>[][]</td><td rowspan="2">-</td><td>[][]</td><td rowspan="2">-</td><td>[][][][]</td></tr>
-			<tr><td>Hari</td><td>Bulan</td><td colspan="1">Tahun</td></tr>
+			<tr><td><input type="date" name="table[p1a]"></td></tr>
+			<tr><td>Hari /Bulan / Tahun</td></tr>
 			</table>
 	</td></tr>
 	<tr>
-		<td rowspan="8" valign="top">b)</td>
-		<td>i) Taraf pekerjaan</td>
-		<td>ii) Pekerjaan</td><td>iii) Industri</td>
-		<td>iv) Taraf pekerjaan</td>
-		<td>v) Pekerjaan</td><td>vi) Industri</td>
+		<td rowspan="3" valign="top">b)</td>
+		<td>i) Taraf pekerjaan</td><td>ii) Pekerjaan</td><td>iii) Industri</td>
+		<td>iv) Taraf pekerjaan</td><td>v) Pekerjaan</td><td>vi) Industri</td>
 	</tr>
-	<tr><td colspan="3">Sebelum PKP 2.0</td><td colspan="3">Semasa</td></tr>
-	<tr><td>
-			<input type="radio" id="i1" name="table[p1b(i)]" value="1">
-			<label for="i1">1-Majikan</label><br>
-		</td><td><input type="text" name="table[table[p1b(ii)]"></td><td><input type="text" name="table[table[p1b(iii)]"></td>
-		<td>
-			<input type="radio" id="iv1" name="table[p1b(iv)]" value="1">
-			<label for="iv1">1-Majikan</label><br>
-		</td>
-		<td><input type="text" name="table[p1b(v)]"></td><td><input type="text" name="table[p1b(vi)]"></td></tr>
-	<tr><td><input type="radio" id="i2" name="table[p1b(i)]" value="2">
-			<label for="i2">2-Pekerja Kerajaan</label><br>
-		</td><td>&nbsp;</td><td>&nbsp;</td>
-		<td><input type="radio" id="iv2" name="table[p1b(iv)]" value="2">
-			<label for="iv2">2-Pekerja Kerajaan</label><br>
-		</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-	<tr><td><input type="radio" id="i3" name="table[p1b(i)]" value="3">
-			<label for="i3">3-Pekerja Swasta</label><br>
-		</td><td>&nbsp;</td><td>&nbsp;</td>
-		<td><input type="radio" id="iv3" name="table[p1b(iv)]" value="3">
-			<label for="iv3">3-Pekerja Swasta</label><br>
-		</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-	<tr><td><input type="radio" id="i4" name="table[p1b(i)]" value="4">
-			<label for="i4">4-Bekerja Sendiri</label><br>
-		</td><td>&nbsp;</td><td>&nbsp;</td>
-		<td><input type="radio" id="iv4" name="table[p1b(iv)]" value="4">
-			<label for="iv4">4-Bekerja Sendiri</label><br>
-			</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-	<tr><td><input type="radio" id="i5" name="table[p1b(i)]" value="5">
-			<label for="i5">5-Pekerja Keluarga Tanpa Gaji</label><br>
-		</td><td>&nbsp;</td><td>&nbsp;</td>
-		<td><input type="radio" id="iv5" name="table[p1b(iv)]" value="5">
-			<label for="iv5">5-Pekerja Keluarga Tanpa Gaji</label><br>
-		</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-	<tr><td><input type="radio" id="i6" name="table[p1b(i)]" value="6">
-			<label for="i6">6-Perantis atau Pelatih Berbayar</label><br>
-		</td><td>&nbsp;</td><td>&nbsp;</td>
-		<td width="250"><input type="radio" id="iv6" name="table[p1b(iv)]" value="6">&nbsp;<label
-		for="iv6">6&nbsp;Perantis&nbsp;atau&nbsp;Pelatih&nbsp;Berbayar</label><br>
-		</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td>&nbsp;</td><td colspan="3">Sebelum PKP 2.0<br></td><td colspan="3">Semasa</td></tr><?php
+	$dataP1B = [1=>'1-Majikan',2=>'2-Pekerja Kerajaan',3=>'3-Pekerja Swasta',
+		4=>'4-Bekerja Sendiri',5=>'5-Pekerja Keluarga Tanpa Gaji',
+		6=>'6-Perantis atau Pelatih Berbayar'];
+		$option = '';
+		foreach($dataP1B as $keyP1B => $paparP1B):
+			$option .= "\n\t\t" . '<option value="' . $keyP1B . '">' . $paparP1B . '</option>';
+		endforeach;
+		echo "\n\t" . '<tr>' . "\n\t" . '<td>'
+		. "\n\t\t" . '<select name="table[p1b(i)]" size="6">' . $option . "\n\t\t" . '</select>'
+		. "\n\t" . '</td>'
+		. "\n\t\t" . '<td><input type="text" name="table[p1b(ii)]" placeholder="MASCO sebelum PKP"></td>'
+		. "\n\t\t" . '<td><input type="text" name="table[p1b(iii)]" placeholder="MSIC sebelum PKP"></td>'
+		. "\n\t" . '<td>'
+		. "\n\t\t" . '<select name="table[p1b(iv)]" size="6">' . $option . "\n\t\t" . '</select>'
+		. "\n\t" . '</td>'
+		. "\n\t" . '<td><input type="text" name="table[p1b(v)]" placeholder="MASCO selepas PKP"></td>'
+		. "\n\t" . '<td><input type="text" name="table[p1b(vi)]" placeholder="MSIC selepas PKP"></td>'
+		. "\n\t" . '</tr>';
+
+	?>
 	<tr><td>c)</td><td>Bilangan jam bekerja sehari</td>
 		<td colspan="2">(i)<input type="text" name="table[p1c]"></td><td>&nbsp;</td>
 		<td colspan="2">(ii)<input type="text" name="table[p1c]"></td></tr>
