@@ -98,7 +98,7 @@
 	S3.	Berapa jam anda bekerja pada minggu rujukan<br>
 		(termasuk kerja-kerja tambahan, pekerjaan kedua, pekerjaan<br>
 		ketiga dan lain-lain)?<br>
-		[][][]Jika 30 jam atau lebih, terus ke S14<br><br>
+		[][][]Jika 30 jam atau lebih, terus ke P1<br><br>
 
 	S4.	Mengapa anda bekerja kurang dari 30 jam	pada minggu rujukan?<br>
 		<ul>
@@ -107,21 +107,21 @@
 		<li><input id="s04-2" type="radio" name="table[s04]" value="2">
 			<label for="s04-2">2-Memang keadaan kerja begitu</label></li>
 		<li><input id="s04-3" type="radio" name="table[s04]" value="3">
-			<label for="s04-3">3-Bersara</label> => terus ke S14 dan selanjutnya</li>
+			<label for="s04-3">3-Bersara</label> => terus ke P1 dan selanjutnya</li>
 		<li><input id="s04-4" type="radio" name="table[s04]" value="4">
-			<label for="s04-4">4-Lanjut usia</label> => terus ke S14 dan selanjutnya</li>
+			<label for="s04-4">4-Lanjut usia</label> => terus ke P1 dan selanjutnya</li>
 		<li><input id="s04-5" type="radio" name="table[s04]" value="5">
 			<label for="s04-5">5-Kerja rumah/tanggungjawab keluarga/komuniti</label>
-			<br>=> terus ke S14 dan selanjutnya</li>
+			<br>=> terus ke P1 dan selanjutnya</li>
 		<li><input id="s04-6" type="radio" name="table[s04]" value="6">
-			<label for="s04-6">6	Cuti</label> => terus ke S14 dan selanjutnya</li>
+			<label for="s04-6">6	Cuti</label> => terus ke P1 dan selanjutnya</li>
 		<li><input id="s04-7" type="radio" name="table[s04]" value="7">
-			<label for="s04-7">7	Sakit/cedera</label> => terus ke S14 dan selanjutnya</li>
+			<label for="s04-7">7	Sakit/cedera</label> => terus ke P1 dan selanjutnya</li>
 		<li><input id="s04-8" type="radio" name="table[s04]" value="8">
-			<label for="s04-8">8	Keadaan cuaca</label> => terus ke S14 dan selanjutnya</li>
+			<label for="s04-8">8	Keadaan cuaca</label> => terus ke P1 dan selanjutnya</li>
 		<li><input id="s04-9" type="radio" name="table[s04]" value="9">
 			<label for="s04-9">9	Perintah Kawalan Pergerakan (PKP) 2.0</label>
-			<br>=> terus ke S14 dan selanjutnya</li>
+			<br>=> terus ke P1 dan selanjutnya</li>
 		</ul>
 
 	S5.	Jika bekerja kurang dari 30 jam pada minggu rujukan,<br>
@@ -132,7 +132,7 @@
 			<label for="s5-1">1-Ya</label></label></li>
 		<li><input id="s5-2" type="radio" name="table[s5]" value="2">
 			<label for="s5-2">2 Tidak</label></li>
-		<li>=> Terus ke S14 dan seterusnya</li>
+		<li>=> Terus ke P1 dan seterusnya</li>
 		</ul>
 
 	S6.	Mengapa anda tidak bekerja pada minggu rujukan?<br>
@@ -150,13 +150,13 @@
 			<label for="s06-5">5-Bukan musim/luar musim/memang keadaan kerja begitu</label>
 			<br> => terus ke S7 dan selanjutnya</li>
 		<li><input id="s06-6" type="radio" name="table[s06]" value="6">
-			<label for="s06-6">6	Perintah Kawalan Pergerakan (PKP) 2.0</label>
+			<label for="s06-6">6-Perintah Kawalan Pergerakan (PKP) 2.0</label>
 			<br> => terus ke S7 dan selanjutnya</li>
 		<li><input id="s06-7" type="radio" name="table[s06]" value="7">
-			<label for="s06-7">7	Henti kerja sementara (pekerja tidak bergaji)</label>
+			<label for="s06-7">7-Henti kerja sementara (pekerja tidak bergaji)</label>
 			<br> => terus ke S7 dan selanjutnya</li>
 		<li><input id="s06-8" type="radio" name="table[s06]" value="8">
-			<label for="s06-8">8	Kehilangan Pekerjaan ( PKP 2.0)</label>
+			<label for="s06-8">8-Kehilangan Pekerjaan ( PKP 2.0)</label>
 			<br> => terus ke S7 dan selanjutnya</li>
 		</ul>
 
