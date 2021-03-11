@@ -59,6 +59,27 @@ endif;
 		if(!isset($_POST['table']['p1f6'])) $_POST['table']['p1f6'] = 0;
 		if(!isset($_POST['table']['p1f7'])) $_POST['table']['p1f7'] = 0;
 		if(!isset($_POST['table']['p1f8'])) $_POST['table']['p1f8'] = 0;
+		#
+		$_POST['table2']['P1F'] = $_POST['table']['p1f1'] . $_POST['table']['p1f2']
+		. $_POST['table']['p1f3'] . $_POST['table']['p1f4']
+		. $_POST['table']['p1f5'] . $_POST['table']['p1f6']
+		. $_POST['table']['p1f7'] . $_POST['table']['p1f8'];
+		#
+	}
+#--------------------------------------------------------------------------------------------------
+	function soalanP2()
+	{
+		if(!isset($_POST['table']['p2-1'])) $_POST['table']['p2-1'] = 0;
+		if(!isset($_POST['table']['p2-2'])) $_POST['table']['p2-2'] = 0;
+		if(!isset($_POST['table']['p2-3'])) $_POST['table']['p2-3'] = 0;
+		if(!isset($_POST['table']['p2-4'])) $_POST['table']['p2-4'] = 0;
+		if(!isset($_POST['table']['p2-5'])) $_POST['table']['p2-5'] = 0;
+		if(!isset($_POST['table']['p2-6'])) $_POST['table']['p2-6'] = 0;
+		#
+		$_POST['table2']['P2'] = $_POST['table']['p2-1'] . $_POST['table']['p2-2']
+		. $_POST['table']['p2-3'] . $_POST['table']['p2-4']
+		. $_POST['table']['p2-5'] . $_POST['table']['p2-6'];
+		#
 	}
 #--------------------------------------------------------------------------------------------------
 		//$_POST['table']['p1b(iv)']
@@ -67,7 +88,11 @@ endif;
 		//$_POST['table']['p4']
 #--------------------------------------------------------------------------------------------------
 ###################################################################################################
-semakPembolehubah($_POST,'_POST Asal');
+$_POST['table']['p6'] = '<hr>';
 soalanP1f();
+soalanP2();
+/*soalanP3();
+soalanP5();*/
+//semakPembolehubah($_POST,'_POST Asal');
 semakPembolehubah($_POST,'_POST Godek');
 
