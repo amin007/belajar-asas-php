@@ -49,16 +49,26 @@ endif;
 #--------------------------------------------------------------------------------------------------
 ###################################################################################################
 #--------------------------------------------------------------------------------------------------
+	function soalanS11($bil = 1)//5
+	{
+		for($kira = 1; $kira <= $bil; $kira++):
+			if(!isset($_POST['table']['s11-' . $kira])) $_POST['table']['s11-' . $kira] = 0;
+		endfor;
+		#
+		$_POST['table2']['S11'] = $_POST['table']['s11-1'] . $_POST['table']['s11-2']
+		. $_POST['table']['s11-3'] . $_POST['table']['s11-4'] . $_POST['table']['s11-5'];
+		#
+	}
+#--------------------------------------------------------------------------------------------------
 	function soalanP1f($bil = 1)//8
 	{
 		for($kira = 1; $kira <= $bil; $kira++):
-			if(!isset($_POST['table']['p1f-' . $kira])) $_POST['table']['p1f' . $kira] = 0;
+			if(!isset($_POST['table']['p1f' . $kira])) $_POST['table']['p1f' . $kira] = 0;
 		endfor;
 		#
 		$_POST['table2']['P1F'] = $_POST['table']['p1f1'] . $_POST['table']['p1f2']
-		. $_POST['table']['p1f3'] . $_POST['table']['p1f4']
-		. $_POST['table']['p1f5'] . $_POST['table']['p1f6']
-		. $_POST['table']['p1f7'] . $_POST['table']['p1f8'];
+		. $_POST['table']['p1f3'] . $_POST['table']['p1f4'] . $_POST['table']['p1f5']
+		. $_POST['table']['p1f6'] . $_POST['table']['p1f7'] . $_POST['table']['p1f8'];
 		#
 	}
 #--------------------------------------------------------------------------------------------------
@@ -81,9 +91,8 @@ endif;
 		endfor;
 		#
 		$_POST['table2']['P3'] = $_POST['table']['p3-1'] . $_POST['table']['p3-2']
-		. $_POST['table']['p3-3'] . $_POST['table']['p3-4']
-		. $_POST['table']['p3-5'] . $_POST['table']['p3-6']
-		. $_POST['table']['p3-7'] . $_POST['table']['p3-8'];
+		. $_POST['table']['p3-3'] . $_POST['table']['p3-4'] . $_POST['table']['p3-5']
+		. $_POST['table']['p3-6'] . $_POST['table']['p3-7'] . $_POST['table']['p3-8'];
 		#
 	}
 #--------------------------------------------------------------------------------------------------
@@ -94,20 +103,16 @@ endif;
 		endfor;
 		#
 		$_POST['table2']['P5'] = $_POST['table']['p5-1'] . $_POST['table']['p5-2']
-		. $_POST['table']['p5-3'] . $_POST['table']['p5-4']
-		. $_POST['table']['p5-5'] . $_POST['table']['p5-6']
-		. $_POST['table']['p5-7'] . $_POST['table']['p5-8']
+		. $_POST['table']['p5-3'] . $_POST['table']['p5-4'] . $_POST['table']['p5-5']
+		. $_POST['table']['p5-6'] . $_POST['table']['p5-7'] . $_POST['table']['p5-8']
 		. $_POST['table']['p5-9'];
 		#
 	}
 #--------------------------------------------------------------------------------------------------
-		//$_POST['table']['p1b(iv)']
-		//$_POST['table']['p1civ']
-		//$_POST['table']['p2']
-		//$_POST['table']['p4']
 #--------------------------------------------------------------------------------------------------
 ###################################################################################################
-$_POST['table']['p6'] = '<hr>';
+$_POST['table']['p6'] = 'sempadan pkp katanya';
+soalans11(5);
 soalanP1f(8);
 soalanP2(6);
 soalanP3(8);
