@@ -356,22 +356,23 @@
 			for="iv6">6&nbsp;Perantis&nbsp;atau&nbsp;Pelatih&nbsp;Berbayar</label><br>
 			</td><td>&nbsp;</td><td>&nbsp;</td></tr>
 		<tr><td>c)</td><td>Bilangan jam bekerja sehari</td>
-			<td colspan="2">(i)		0		8</td><td>&nbsp;</td>
-			<td colspan="2">(ii)</td></tr>
+			<td colspan="2">(i)<input type="text" name="table[p1c]"></td><td>&nbsp;</td>
+			<td colspan="2">(ii)<input type="text" name="table[p1c]"></td></tr>
 		<tr><td>d)</td><td>Adakah pekerjaan tersebut sesuai<br>dengan siji/kemahiran yang dimiliki ?</td>
 			<td colspan="2">(i)
-				<input id="p1ci-1" type="radio" name="table[p1ci]" value="1">
+				<input id="p1ci-1" type="radio" name="table[p1d(i)]" value="1">
 				<label for="p1ci-1">1-Ya</label>
-				<input id="p1ci-2" type="radio" name="table[p1ci]" value="2">
+				<input id="p1ci-2" type="radio" name="table[p1d(i)]" value="2">
 				<label for="p1ci-2">2 Tidak</label>
 			</td><td>&nbsp;</td>
 			<td colspan="2">(ii)
-				<input id="p1civ-1" type="radio" name="table[p1civ]" value="1">
+				<input id="p1civ-1" type="radio" name="table[p1d(ii)]" value="1">
 				<label for="p1civ-1">1-Ya</label>
-				<input id="p1civ-2" type="radio" name="table[p1civ]" value="2">
+				<input id="p1civ-2" type="radio" name="table[p1d(ii)]" value="2">
 				<label for="p1civ-2">2 Tidak</label>
 			</td></tr>
-		<tr><td>e)</td><td>Gaji/ Upah/ Faedah (RM)</td><td colspan="2">(i)	2000</td><td>&nbsp;</td><td colspan="2">(ii)</td></tr>
+		<tr><td>e)</td><td>Gaji/ Upah/ Faedah (RM)</td><td colspan="2">(i)<input type="text" name="table[p1e]"></td>
+			<td>&nbsp;</td><td colspan="2">(ii)<input type="text" name="table[p1e]"></td></tr>
 	<tr><td rowspan="5" valign="top">f)</td>
 			<td colspan="6">Di manakah anda menjalankan pekerjaan pada minggu rujukan? (Bagi Ahli yang bekerja - Boleh pilih lebih dari satu)</td></tr>
 	<tr><td colspan="3">
