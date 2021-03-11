@@ -1,9 +1,20 @@
 <form method="POST" action="borang_proses.php">
 <table><tr><td>
-		0	1	0	0		3		0		1		2		0			0	8												0	1			0			0			1
-</td></tr>
-<tr><td>
-		NG		DB					BP						TK																NOIR			NOAIR
+	<table>
+	<tr><?php
+		$noBP = ['NG','DB','BP','TK','kosong','NOIR','NOAIR'];
+		foreach($noBP as $paparBP):
+			if($paparBP == 'kosong'):
+				echo '<td>&nbsp;</td>';
+			else:
+				echo '<td><input type="text" name="table['
+				. strtolower($paparBP) . ']"></td>';
+			endif;
+		endforeach;
+		?></tr>
+	<tr><td>NG</td><td>DB</td><td>BP</td><td>TK</td><td>&nbsp;</td><td>NOIR</td><td>NOAIR</td></tr>
+	</table>
+	<hr>
 </td></tr>
 <tr><td>
 	Bahagian A (Butir-butir Ahli Isi Rumah)
@@ -21,37 +32,41 @@
 		</ul>
 	</td width="50%">
 	<td>
-	<ul>
-	<li>A6.	Kumpulan etnik</li>
-	<li><input id="a06-1" type="radio" name="table[a06]" value="1">
-		<label for="a06-1">1-Bumiputera</label></li>
-	<li><input id="a06-2" type="radio" name="table[a06]" value="2">
-		<label for="a06-2">2-Cina</label></li>
-	<li><input id="a06-3" type="radio" name="table[a06]" value="3">
-		<label for="a06-3">3-India</label></li>
-	<li><input id="a06-4" type="radio" name="table[a06]" value="4">
-		<label for="a06-4">4-Lain-Lain</label></li>
-	<li><input id="a06-5" type="radio" name="table[a06]" value="5">
-		<label for="a06-5">5-Bukan Warganegara</label></li>
-	</ul>
+		<ul>
+		<li>A6.	Kumpulan etnik</li>
+		<li><input id="a06-1" type="radio" name="table[a06]" value="1">
+			<label for="a06-1">1-Bumiputera</label></li>
+		<li><input id="a06-2" type="radio" name="table[a06]" value="2">
+			<label for="a06-2">2-Cina</label></li>
+		<li><input id="a06-3" type="radio" name="table[a06]" value="3">
+			<label for="a06-3">3-India</label></li>
+		<li><input id="a06-4" type="radio" name="table[a06]" value="4">
+			<label for="a06-4">4-Lain-Lain</label></li>
+		<li><input id="a06-5" type="radio" name="table[a06]" value="5">
+			<label for="a06-5">5-Bukan Warganegara</label></li>
+		</ul>
 
-	<ul>
-	<li>A7.	Taraf Pendidikan :</li>
-	<li><input id="a07-1" type="radio" name="table[a07]" value="1">
-		<label for="a07-1">1-Rendah</label></li>
-	<li><input id="a07-2" type="radio" name="table[a07]" value="2">
-		<label for="a07-2">2-Menengah</label></li>
-	<li><input id="a07-3" type="radio" name="table[a07]" value="3">
-		<label for="a07-3">3-Tertiari</label></li>
-	<li><input id="a07-4" type="radio" name="table[a07]" value="4">
-		<label for="a07-4">4-Tiada pendidikan rasmi</label></li>
-	</ul>
+		<ul>
+		<li>A7.	Taraf Pendidikan :</li>
+		<li><input id="a07-1" type="radio" name="table[a07]" value="1">
+			<label for="a07-1">1-Rendah</label></li>
+		<li><input id="a07-2" type="radio" name="table[a07]" value="2">
+			<label for="a07-2">2-Menengah</label></li>
+		<li><input id="a07-3" type="radio" name="table[a07]" value="3">
+			<label for="a07-3">3-Tertiari</label></li>
+		<li><input id="a07-4" type="radio" name="table[a07]" value="4">
+			<label for="a07-4">4-Tiada pendidikan rasmi</label></li>
+		</ul>
 	</td></tr>
 	<table>
+	<hr>
 </td></tr>
 <tr><td>
 	Bahagian B (Pekerjaan Semasa) - PERLU DIISI OLEH AHLI YANG BERUMUR 15 TAHUN KEATAS
+	<hr>
 </td></tr>
+<tr><td>
+	<table>
 <tr><td width="50%">
 	S1.	Adakah anda bekerja sekurang-kurangnya<br>
 		SEJAM (Minggu Rujukan) kerana upah atau<br>
@@ -265,10 +280,13 @@
 		<li><input id="s13-8" type="radio" name="table[s13]" value="8">
 			<label for="s13-8">8-Lanjut usia</label></li>
 		</ul>
-	</td>
-</tr>
+	</td></tr>
+	</table>
+	<hr>
+</td></tr>
 <tr><td>
 	Bahagian C (Kajian kesan COVID-19/ PKP 2.0) - PERLU DIISI OLEH AHLI YANG BERUMUR 15 TAHUN KEATAS
+	<hr>
 </td></tr>
 <tr><td>
 	<table border=="1" width="100%">
