@@ -17,21 +17,28 @@
 	<hr>
 </td></tr>
 <tr><td>
-	Bahagian A (Butir-butir Ahli Isi Rumah)
-	<table width="100%"><tr><td width="50%">
-	<br>A1.	Nama :		{nama}:
-	<br>A2.	No Kad Pengenalan :
-	<br>A3.	No telefon:
-	<br>A4.	Umur :	[][][]	015 - 200
-	<br>A5.	Jantina :
-		<ul>
-		<li><input id="a05-1" type="radio" name="table[a05]" value="1">
-			<label for="a05-1">1-Lelaki</label></li>
-		<li><input id="a05-2" type="radio" name="table[a05]" value="2">
-			<label for="a05-2">2-Perempuan</label></li>
-		</ul>
-	</td width="50%">
-	<td>
+	<table width="100%"><tr><td width="50%" valign="top">
+		Bahagian A (Butir-butir Ahli Isi Rumah)<br>
+		<table>
+		<tr><td>A1.	Nama</td><td>&nbsp;:&nbsp;
+			<input type="text" name="table[a1]"></td></tr>
+		<tr><td>A2.	No Kad Pengenalan</td><td>&nbsp;:&nbsp;
+			<input type="text" name="table[a2]"></td></tr>
+		<tr><td>A3.	No telefon</td><td>&nbsp;:&nbsp;
+			<input type="text" name="table[a3]"></td></tr>
+		<tr><td>A4.	Umur </td><td>&nbsp;:&nbsp;
+			<input type="text" name="table[a4]">&nbsp;&nbsp;015 - 200</td></tr>
+		<tr><td valign="top">A5. Jantina</td><td valign="top">&nbsp;:&nbsp;
+			<ul>
+			<li><input id="a05-1" type="radio" name="table[a05]" value="1">
+				<label for="a05-1">1-Lelaki</label></li>
+			<li><input id="a05-2" type="radio" name="table[a05]" value="2">
+				<label for="a05-2">2-Perempuan</label></li>
+			</ul>
+		</td></tr>
+		</table>
+	</td>
+	<td width="50%">
 		<ul>
 		<li>A6.	Kumpulan etnik</li>
 		<li><input id="a06-1" type="radio" name="table[a06]" value="1">
