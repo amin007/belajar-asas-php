@@ -256,15 +256,15 @@
 		S11.	Apakah langkah-langkah yang telah anda ambil untuk<br>
 			mendapatkan kerja pada minggu rujukan?<br>
 		<ul>
-			<input id="s11-1" type="radio" name="table[s11]" value="1">
+		<li><input id="s11-1" type="checkbox" name="table[s11-1]" value="1">
 			<label for="s11-1">1-Jabatan Tenaga Kerja/Agensi Pekerjaan</label></li>
-		<li><input id="s11-2" type="radio" name="table[s11]" value="2">
+		<li><input id="s11-2" type="checkbox" name="table[s11-2]" value="2">
 			<label for="s11-2">2-Menjawab iklan/mengiklan</label></li>
-		<li><input id="s11-3" type="radio" name="table[s11]" value="3">
+		<li><input id="s11-3" type="checkbox" name="table[s11-3]" value="3">
 			<label for="s11-3">3-Menghantar surat/emel permohonan</label></li>
-		<li><input id="s11-4" type="radio" name="table[s11]" value="4">
+		<li><input id="s11-4" type="checkbox" name="table[s11-4]" value="4">
 			<label for="s11-4">4-Beritahu sahabat/saudara mara</label></li>
-		<li><input id="s11-5" type="radio" name="table[s11]" value="5">
+		<li><input id="s11-5" type="checkbox" name="table[s11-5]" value="5">
 			<label for="s11-5">5-Menghadiri karnival kerjaya/keusahawanan</label></li>
 		</ul>
 
