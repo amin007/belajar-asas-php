@@ -307,72 +307,72 @@
 			<tr><td>[][]</td><td rowspan="2">-</td><td>[][]</td><td rowspan="2">-</td><td>[][][][]</td></tr>
 			<tr><td>Hari</td><td>Bulan</td><td colspan="1">Tahun</td></tr>
 			</table>
-		</td></tr>
-		<tr>
+	</td></tr>
+	<tr>
 		<td rowspan="8" valign="top">b)</td>
 		<td>i) Taraf pekerjaan</td>
 		<td>ii) Pekerjaan</td><td>iii) Industri</td>
 		<td>iv) Taraf pekerjaan</td>
 		<td>v) Pekerjaan</td><td>vi) Industri</td>
-		</tr>
-		<tr><td colspan="3">Sebelum PKP 2.0</td><td colspan="3">Semasa</td></tr>
-		<tr><td>
-				<input type="radio" id="i1" name="table[p1b(i)]" value="1">
-				<label for="i1">1-Majikan</label><br>
-			</td><td>&nbsp;</td><td>&nbsp;</td>
-			<td>
-				<input type="radio" id="iv1" name="table[p1b(iv)]" value="1">
-				<label for="iv1">1-Majikan</label><br>
-			</td>
-			<td>&nbsp;</td><td>&nbsp;</td></tr>
-		<tr><td><input type="radio" id="i2" name="table[p1b(i)]" value="2">
-				<label for="i2">2-Pekerja Kerajaan</label><br>
-			</td><td>&nbsp;</td><td>&nbsp;</td>
-			<td><input type="radio" id="iv2" name="table[p1b(iv)]" value="2">
-				<label for="iv2">2-Pekerja Kerajaan</label><br>
+	</tr>
+	<tr><td colspan="3">Sebelum PKP 2.0</td><td colspan="3">Semasa</td></tr>
+	<tr><td>
+			<input type="radio" id="i1" name="table[p1b(i)]" value="1">
+			<label for="i1">1-Majikan</label><br>
+		</td><td><input type="text" name="table[table[p1b(ii)]"></td><td><input type="text" name="table[table[p1b(iii)]"></td>
+		<td>
+			<input type="radio" id="iv1" name="table[p1b(iv)]" value="1">
+			<label for="iv1">1-Majikan</label><br>
+		</td>
+		<td><input type="text" name="table[p1b(v)]"></td><td><input type="text" name="table[p1b(vi)]"></td></tr>
+	<tr><td><input type="radio" id="i2" name="table[p1b(i)]" value="2">
+			<label for="i2">2-Pekerja Kerajaan</label><br>
+		</td><td>&nbsp;</td><td>&nbsp;</td>
+		<td><input type="radio" id="iv2" name="table[p1b(iv)]" value="2">
+			<label for="iv2">2-Pekerja Kerajaan</label><br>
+		</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td><input type="radio" id="i3" name="table[p1b(i)]" value="3">
+			<label for="i3">3-Pekerja Swasta</label><br>
+		</td><td>&nbsp;</td><td>&nbsp;</td>
+		<td><input type="radio" id="iv3" name="table[p1b(iv)]" value="3">
+			<label for="iv3">3-Pekerja Swasta</label><br>
+		</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td><input type="radio" id="i4" name="table[p1b(i)]" value="4">
+			<label for="i4">4-Bekerja Sendiri</label><br>
+		</td><td>&nbsp;</td><td>&nbsp;</td>
+		<td><input type="radio" id="iv4" name="table[p1b(iv)]" value="4">
+			<label for="iv4">4-Bekerja Sendiri</label><br>
 			</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-		<tr><td><input type="radio" id="i3" name="table[p1b(i)]" value="3">
-				<label for="i3">3-Pekerja Swasta</label><br>
-			</td><td>&nbsp;</td><td>&nbsp;</td>
-			<td><input type="radio" id="iv3" name="table[p1b(iv)]" value="3">
-				<label for="iv3">3-Pekerja Swasta</label><br>
-			</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-		<tr><td><input type="radio" id="i4" name="table[p1b(i)]" value="4">
-				<label for="i4">4-Bekerja Sendiri</label><br>
-			</td><td>&nbsp;</td><td>&nbsp;</td>
-			<td><input type="radio" id="iv4" name="table[p1b(iv)]" value="4">
-				<label for="iv4">4-Bekerja Sendiri</label><br>
-				</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-		<tr><td><input type="radio" id="i5" name="table[p1b(i)]" value="5">
-				<label for="i5">5-Pekerja Keluarga Tanpa Gaji</label><br>
-			</td><td>&nbsp;</td><td>&nbsp;</td>
-			<td><input type="radio" id="iv5" name="table[p1b(iv)]" value="5">
-				<label for="iv5">5-Pekerja Keluarga Tanpa Gaji</label><br>
-			</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-		<tr><td><input type="radio" id="i6" name="table[p1b(i)]" value="6">
-				<label for="i6">6-Perantis atau Pelatih Berbayar</label><br>
-			</td><td>&nbsp;</td><td>&nbsp;</td>
-			<td width="250"><input type="radio" id="iv6" name="table[p1b(iv)]" value="6">&nbsp;<label
-			for="iv6">6&nbsp;Perantis&nbsp;atau&nbsp;Pelatih&nbsp;Berbayar</label><br>
-			</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-		<tr><td>c)</td><td>Bilangan jam bekerja sehari</td>
-			<td colspan="2">(i)<input type="text" name="table[p1c]"></td><td>&nbsp;</td>
-			<td colspan="2">(ii)<input type="text" name="table[p1c]"></td></tr>
-		<tr><td>d)</td><td>Adakah pekerjaan tersebut sesuai<br>dengan siji/kemahiran yang dimiliki ?</td>
-			<td colspan="2">(i)
-				<input id="p1ci-1" type="radio" name="table[p1d(i)]" value="1">
-				<label for="p1ci-1">1-Ya</label>
-				<input id="p1ci-2" type="radio" name="table[p1d(i)]" value="2">
-				<label for="p1ci-2">2 Tidak</label>
-			</td><td>&nbsp;</td>
-			<td colspan="2">(ii)
-				<input id="p1civ-1" type="radio" name="table[p1d(ii)]" value="1">
-				<label for="p1civ-1">1-Ya</label>
-				<input id="p1civ-2" type="radio" name="table[p1d(ii)]" value="2">
-				<label for="p1civ-2">2 Tidak</label>
-			</td></tr>
-		<tr><td>e)</td><td>Gaji/ Upah/ Faedah (RM)</td><td colspan="2">(i)<input type="text" name="table[p1e]"></td>
-			<td>&nbsp;</td><td colspan="2">(ii)<input type="text" name="table[p1e]"></td></tr>
+	<tr><td><input type="radio" id="i5" name="table[p1b(i)]" value="5">
+			<label for="i5">5-Pekerja Keluarga Tanpa Gaji</label><br>
+		</td><td>&nbsp;</td><td>&nbsp;</td>
+		<td><input type="radio" id="iv5" name="table[p1b(iv)]" value="5">
+			<label for="iv5">5-Pekerja Keluarga Tanpa Gaji</label><br>
+		</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td><input type="radio" id="i6" name="table[p1b(i)]" value="6">
+			<label for="i6">6-Perantis atau Pelatih Berbayar</label><br>
+		</td><td>&nbsp;</td><td>&nbsp;</td>
+		<td width="250"><input type="radio" id="iv6" name="table[p1b(iv)]" value="6">&nbsp;<label
+		for="iv6">6&nbsp;Perantis&nbsp;atau&nbsp;Pelatih&nbsp;Berbayar</label><br>
+		</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td>c)</td><td>Bilangan jam bekerja sehari</td>
+		<td colspan="2">(i)<input type="text" name="table[p1c]"></td><td>&nbsp;</td>
+		<td colspan="2">(ii)<input type="text" name="table[p1c]"></td></tr>
+	<tr><td>d)</td><td>Adakah pekerjaan tersebut sesuai<br>dengan siji/kemahiran yang dimiliki ?</td>
+		<td colspan="2">(i)
+			<input id="p1ci-1" type="radio" name="table[p1d(i)]" value="1">
+			<label for="p1ci-1">1-Ya</label>
+			<input id="p1ci-2" type="radio" name="table[p1d(i)]" value="2">
+			<label for="p1ci-2">2 Tidak</label>
+		</td><td>&nbsp;</td>
+		<td colspan="2">(ii)
+			<input id="p1civ-1" type="radio" name="table[p1d(ii)]" value="1">
+			<label for="p1civ-1">1-Ya</label>
+			<input id="p1civ-2" type="radio" name="table[p1d(ii)]" value="2">
+			<label for="p1civ-2">2 Tidak</label>
+		</td></tr>
+	<tr><td>e)</td><td>Gaji/ Upah/ Faedah (RM)</td><td colspan="2">(i)<input type="text" name="table[p1e]"></td>
+		<td>&nbsp;</td><td colspan="2">(ii)<input type="text" name="table[p1e]"></td></tr>
 	<tr><td rowspan="5" valign="top">f)</td>
 			<td colspan="6">Di manakah anda menjalankan pekerjaan pada minggu rujukan? (Bagi Ahli yang bekerja - Boleh pilih lebih dari satu)</td></tr>
 	<tr><td colspan="3">
