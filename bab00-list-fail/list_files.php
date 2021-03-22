@@ -287,6 +287,32 @@
 		return $ipaddress . "<br>\n";
 	}
 #--------------------------------------------------------------------------------------------------
+	function semakDNS()
+	{
+		/* # 2. isytiharkan zon masa => Asia/Kuala Lumpur
+		date_default_timezone_set('Asia/Kuala_Lumpur');
+		$localIP[] = date("h:i:s",$_SERVER['REQUEST_TIME']);
+		$localIP[] = getHostName();
+		$localIP[] = getHostByName(getHostName());;
+		//echo "<pre>localIP = \n"; print_r($localIP);/*/
+		# ---
+		//https://www.meridianoutpost.com/resources/articles/command-line/ipconfig.php
+		exec("ipconfig /all", $out, $res);
+		//exec("ipconfig /flushdns", $out2, $res);
+		exec("ipconfig /displaydns", $out3, $res);
+		echo "<pre>out = \n"; print_r($out);
+		echo "<pre>out = \n"; print_r($out3);
+		/*foreach (preg_grep('/^\s*Physical Address[^:]*:\s*([0-9a-f-]+)/i', $out) as $line)
+		{
+			echo substr(strrchr($line, ' '), 1), PHP_EOL;
+		}*/
+		# ---
+		/*// http://www.php.net/manual/en/function.exec.php#85930
+		# ---
+		$result = dns_get_record("10.69.112.168");
+		//echo "\n Result = "; print_r($result);//*/
+	}
+#--------------------------------------------------------------------------------------------------
 	function contohBorang()
 	{
 		diatas('Borang Bootstrap');
