@@ -207,6 +207,7 @@
 			'[Pexels]'=>'https://pexels.com',
 			'[Unslpash]'=>'https://unsplash.com',
 			'[7-themes]'=>'http://7-themes.com',
+			'[Free MP3]'=>'https://freemp3cloud.com',
 		);
 
 		return $papar;
