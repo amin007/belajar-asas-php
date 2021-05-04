@@ -35,6 +35,12 @@ $tanya = new \Aplikasi\Kitab\Tanya();
 //$this->sql = new \Aplikasi\Kitab\Sql();
 //$this->insertSql = new \Aplikasi\Kitab\Sql_Insert();//*/
 #--------------------------------------------------------------------------------------------------
+/*echo '<form method="GET" action="-index.php">
+<input type="text" name="cariApa" placeholder="cariApa">
+<input type="submit" value="hantar"></form>';
+//$_GET['cariApa']
+*/
+#--------------------------------------------------------------------------------------------------
 /*
 SELECT NGDBBP2020,UB,TK,IR,NAMA,ETNIK,ALAMAT,
 CATATAN,TEL_NO,NAMAKAMPUNG,LOKALITI
@@ -83,7 +89,6 @@ foreach($senarai as $myTable => $row):
 	$papar = binaJadual($row, $myTable, $class);
 	$bilRow = count($row);
 endforeach;
-
 #--------------------------------------------------------------------------------------------------
 //masukCssTableExcel();
 //diatas();
