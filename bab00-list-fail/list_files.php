@@ -538,6 +538,7 @@ END;
 #--------------------------------------------------------------------------------------------------
 	function dibawah()
 	{
+		$jsDaa = ulangJS(listJS());
 		print <<<END
 
 <!-- Footer
@@ -552,12 +553,37 @@ END;
 
 <!-- khas untuk jquery dan js2 lain
 =============================================================================================== -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<!-- script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script -->
+$jsDaa
 </body>
 </html>
 END;
 }
+#--------------------------------------------------------------------------------------------------
+	function listJS($pilih = 'B')
+	{
+		$pA[] = 'https://code.jquery.com/jquery-3.3.1.slim.min.js';
+		$pA[] = 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js';
+		$pA[] = 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js';
+		//$pA[] = 'https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js';
+		$pB[] = 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js';
+		# pilih tatasusunan
+		$p = ($pilih === 'B') ? $pB : $pA;
+
+		return $p;
+	}
+#--------------------------------------------------------------------------------------------------
+	function ulangJS($listJS)
+	{
+		$p = null;
+		if (isset($listJS) && $listJS != null)
+		{
+			foreach ($listJS as $js)
+			{
+				$p .= '<script type="text/javascript" src="' . $js
+				. '"></script>' . "\n";
+			}
+		}//$p .= "\n";
+
+		return $p;
+	}
 #--------------------------------------------------------------------------------------------------
