@@ -69,6 +69,20 @@
 	<hr>
 </td></tr>
 <tr><td>
+	<br>Kegunaan pejabat: RIN []
+	<br>Nota:
+	<br>Nyatakan RINGKASAN (RIN) bagi ahli isi rumah tersebut berdasarkan pilihan jawapan bagi soalan di atas dengan merujuk aliran RINGKASAN dalam STB sebagai panduan.
+	<br>RIN 1	Guna tenaga penuh - Seseorang yang bekerja 30 jam atau lebih pada minggu rujukan.
+	<br>RIN 2	Seseorang yang bekerja kurang 30 jam disebabkan kerja tidak mencukupi dan sanggup terima tambahan bilangan jam.
+	<br>RIN 3	Seseorang yang bekerja kurang 30 jam disebabkan kerja tidak mencukupi dan tidak sanggup terima tambahan bilangan jam.
+	<br>RIN 4	Seseorang yang bekerja kurang 30 jam dengan sebab lain selain kerja tidak mencukupi.
+	<br>RIN 5	Seseorang yang mempunyai pekerjaan tetapi tidak bekerja pada minggu rujukan.
+	<br>RIN 6	Penganggur Aktif - Seseorang yang tidak mempunyai pekerjaan tetapi sedia dan aktif mencari pekerjaan.
+	<br>RIN 7	Penganggur Tidak Aktif- Seseorang yang tidak mempunyai pekerjaan dan mempunyai sebab tidak mencari pekerjaan.
+	<br>RIN 8	Luar Tenaga Buruh - Seseorang yang tidak mempunyai pekerjaan dan tidak pernah mencari pekerjaan seperti suri rumah, belajar dll.
+	<br>																																																
+</td></tr>
+<tr><td>
 	Bahagian B (Pekerjaan Semasa) - PERLU DIISI OLEH AHLI YANG BERUMUR 15 TAHUN KEATAS
 	<hr>
 </td></tr>
