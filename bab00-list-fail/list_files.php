@@ -441,19 +441,71 @@ END;
 		dibawah();
 	}
 #--------------------------------------------------------------------------------------------------
+	function senaraiCss($pilih = 0)
+	{
+		$papar[] = array(
+			'https://use.fontawesome.com/releases/v5.11.2/css/all.css',
+			//'https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css',
+			'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'
+		);
+		$papar[] = array(
+			'https://use.fontawesome.com/releases/v5.11.2/css/all.css',
+			'https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css',
+		);
+
+		return $papar[$pilih];
+	}
+#--------------------------------------------------------------------------------------------------
+	function ulangCss($listCss)
+	{
+		$style = null;
+		if (isset($listCss) && $listCss != null)
+		{
+			foreach ($listCss as $css)
+			{
+				$style .= "\n" . '<link rel="stylesheet" type="text/css" href="' . $css . '">';
+			}
+		}//$style .= "\n";
+
+		return $style;
+	}
+#--------------------------------------------------------------------------------------------------
+	function metaList()
+	{
+		$p[] = '<meta charset="utf-8">';
+		$p[] = '<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">';
+		//$p[] = '<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">';
+		$p[] = '<meta name="description" content="">';
+		//$p[] = '<meta name="keywords" content="derma,Crownfunding,">';
+		$p[] = '<meta name="author" content="Amin007">';
+		//$p[] = '';
+		return $p;
+	}
+#--------------------------------------------------------------------------------------------------
+	function ulangMeta($listMeta)
+	{
+		$p = null;
+		if (isset($listMeta) && $listMeta != null)
+		{
+			foreach ($listMeta as $meta)
+			{
+				$p .= "\n" . $meta;
+			}
+		}
+		//$p .= "\n";
+
+		return $p;
+	}
+#--------------------------------------------------------------------------------------------------
 	function diatas($title = 'List Folder')
 	{
+		$meta = ulangMeta(metaList());
+		$style = ulangCss(senaraiCss(1));
 		print <<<END
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1,, maximum-scale=1, shrink-to-fit=no">
-<meta name="description" content="">
-<meta name="author" content="">
-<title>$title</title>
-<link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet" type="text/css">
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<head>$meta
+<title>$title</title>$style
 
 <style type="text/css">
 table.excel {
