@@ -3,6 +3,7 @@
 	# define pembolehubah global
 	define('URL', dirname('http://' . $_SERVER['SERVER_NAME'] . $_SERVER['PHP_SELF']) . '/');
 	define('SERVER', 'http://' . $_SERVER['SERVER_NAME'] . '/');
+	//https://stackoverflow.com/questions/5335273/how-can-i-send-an-email-using-php
 #--------------------------------------------------------------------------------------------------
 // multiple recipients
 $to  = 'puteratangkak@duduk.mana' . ', '; // note the comma
