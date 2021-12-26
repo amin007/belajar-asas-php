@@ -192,12 +192,15 @@
 	function getIdea()
 	{
 		$papar = array(
+			'[GITN Test]'=>'//speedtest.gitn.net.my',
 			'[TM Test]'=>'//speedtest.tm.com.my',
 			'[Fast.com]'=>'//fast.com',
 			'[Speedtest.net]'=>'https://www.speedtest.net',
+			'[nPerf]'=>'https://www.nperf.com',
 			'[Kalendar]'=>'https://www.mysumber.com/cuti-umum.html',
 			'[jQuery]'=>'http://jquery.com',
 			'[Bootstrap]'=>'http://getbootstrap.com',
+			'[PicoCss]'=>'https://picocss.com',
 			'[animate.css]'=>'https://daneden.github.io/animate.css',
 			'[Sweet Alert]'=>'http://t4t5.github.io/sweetalert',
 			'[FontAwesome]'=>'http://fortawesome.github.io/Font-Awesome',
